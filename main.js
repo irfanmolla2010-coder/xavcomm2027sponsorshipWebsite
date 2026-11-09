@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Xavcomm'27 - Main Client Script
  * Handles navigation, countdown timer, tier tabs, deliverables filter, and sponsorship inquiry interactions.
  */
@@ -324,7 +324,7 @@ function handleInquirySubmit(event) {
       successAlert.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
 
-    // Also trigger mailto so user's email client prepares the draft directly to Xavcommm2027@gmail.com
+    // Also trigger mailto so user's email client prepares the draft directly to xavcomm2027@gmail.com
     const mailSubject = encodeURIComponent(`[Xavcomm'27 Sponsorship] ${company} - ${tier}`);
     const mailBody = encodeURIComponent(
       `Hello Xavcomm'27 Convenors,\n\n` +
@@ -338,7 +338,7 @@ function handleInquirySubmit(event) {
       `Looking forward to hearing from you.\n`
     );
 
-    const mailtoUrl = `mailto:Xavcommm2027@gmail.com?subject=${mailSubject}&body=${mailBody}`;
+    const mailtoUrl = `mailto:xavcomm2027@gmail.com?subject=${mailSubject}&body=${mailBody}`;
     
     // Give brief delay so they see confirmation before optionally launching mail app
     setTimeout(() => {
