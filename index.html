@@ -1,0 +1,1997 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xavcomm'27 | Tapestry of Stories — St. Xavier's University, Kolkata</title>
+  <meta name="description" content="Xavcomm'27 - Tapestry of Stories. 5th Edition of the Annual Inter-College Media Fest by the Department of Mass Communication, St. Xavier's University, Kolkata. 29th & 30th January, 2027.">
+  
+  <!-- Google Fonts: Cormorant Garamond, Cinzel & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Tailwind CSS via CDN with custom configurations -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            sxu: {
+              gold: '#D4AF37',
+              'gold-light': '#F3E5AB',
+              'gold-dark': '#997D20',
+              bronze: '#C59B27',
+              dark: '#08090C',
+              'dark-card': '#101218',
+              'dark-border': '#222530',
+              crimson: '#8B1E28',
+              accent: '#C83232'
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            display: ['"Cinzel"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- PDF.js Library via CDN for high-fidelity poster rendering -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-[#07080b] text-gray-200 font-sans antialiased selection:bg-amber-500 selection:text-black min-h-screen relative overflow-x-hidden">
+
+  <!-- Graphical Cinematic Background System -->
+  <div id="graphicalBackground" class="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
+    
+    <!-- Deep Ambient Radial Glows -->
+    <div class="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[1200px] h-[650px] bg-gradient-to-b from-amber-600/12 via-amber-900/6 to-transparent blur-[150px]"></div>
+    <div class="absolute bottom-0 right-[-10%] w-[750px] h-[750px] bg-gradient-to-t from-red-950/15 via-amber-950/10 to-transparent blur-[160px]"></div>
+    <div class="absolute top-[40%] left-[-15%] w-[650px] h-[650px] bg-gradient-to-r from-amber-800/10 to-transparent blur-[140px]"></div>
+
+    <!-- Fine Architectural Grid Pattern Overlay -->
+    <div class="absolute inset-0 bg-grid-pattern opacity-60"></div>
+
+    <!-- Dynamic Ambient Particles & Embers Canvas -->
+    <canvas id="bgCanvas" class="absolute inset-0 w-full h-full opacity-65"></canvas>
+
+    <!-- Kolkata Heritage Skyline & Media Tapestry Vector Artwork -->
+    <div class="absolute bottom-0 left-0 w-full h-[320px] sm:h-[400px] md:h-[480px] opacity-[0.22] transition-opacity duration-700 pointer-events-none">
+      <svg class="w-full h-full" viewBox="0 0 1600 450" fill="none" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="goldSkylineGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#F3E5AB" stop-opacity="0.9" />
+            <stop offset="35%" stop-color="#D4AF37" stop-opacity="0.6" />
+            <stop offset="85%" stop-color="#8B6508" stop-opacity="0.3" />
+            <stop offset="100%" stop-color="#07080B" stop-opacity="0.9" />
+          </linearGradient>
+
+          <linearGradient id="filmGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#C59B27" stop-opacity="0.1" />
+            <stop offset="50%" stop-color="#F3E5AB" stop-opacity="0.7" />
+            <stop offset="100%" stop-color="#8B1E28" stop-opacity="0.2" />
+          </linearGradient>
+
+          <radialGradient id="lampGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#FDE68A" stop-opacity="0.9" />
+            <stop offset="50%" stop-color="#D4AF37" stop-opacity="0.4" />
+            <stop offset="100%" stop-color="#D4AF37" stop-opacity="0" />
+          </radialGradient>
+        </defs>
+
+        <!-- Background Distant Silhouettes (Victoria Memorial & Riverbank) -->
+        <g stroke="url(#goldSkylineGrad)" stroke-width="1.2" fill="none">
+          <!-- Victoria Memorial Grand Central Dome -->
+          <path d="M 320 280 Q 320 210 380 180 Q 420 160 450 160 Q 480 160 520 180 Q 580 210 580 280 Z" stroke-dasharray="3 3"/>
+          <path d="M 450 160 L 450 130 M 440 130 L 460 130 M 450 130 L 450 110 M 443 115 L 457 115"/>
+          <!-- Angel of Victory on Dome -->
+          <circle cx="450" cy="105" r="4" fill="#F3E5AB"/>
+          <path d="M 444 105 L 456 105 M 446 108 L 450 115 L 454 108"/>
+
+          <!-- Colonnades & Subsidiary Domes -->
+          <path d="M 260 280 Q 285 240 310 240 Q 335 240 360 280 Z"/>
+          <path d="M 540 280 Q 565 240 590 240 Q 615 240 640 280 Z"/>
+          <line x1="220" y1="280" x2="680" y2="280"/>
+          
+          <!-- Columns -->
+          <line x1="390" y1="280" x2="390" y2="230"/>
+          <line x1="420" y1="280" x2="420" y2="220"/>
+          <line x1="450" y1="280" x2="450" y2="215"/>
+          <line x1="480" y1="280" x2="480" y2="220"/>
+          <line x1="510" y1="280" x2="510" y2="230"/>
+
+          <!-- Howrah Bridge Cantilever Spans -->
+          <!-- Left Main Tower -->
+          <path d="M 920 340 L 970 80 L 1020 340 Z"/>
+          <line x1="970" y1="80" x2="970" y2="340"/>
+          <line x1="935" y1="260" x2="1005" y2="260"/>
+          <line x1="945" y1="180" x2="995" y2="180"/>
+          <line x1="958" y1="120" x2="982" y2="120"/>
+          <!-- Diagonal Bracings -->
+          <line x1="920" y1="340" x2="995" y2="180"/>
+          <line x1="1020" y1="340" x2="945" y2="180"/>
+          <line x1="945" y1="180" x2="970" y2="80"/>
+          <line x1="995" y1="180" x2="970" y2="80"/>
+
+          <!-- Right Main Tower -->
+          <path d="M 1240 340 L 1290 80 L 1340 340 Z"/>
+          <line x1="1290" y1="80" x2="1290" y2="340"/>
+          <line x1="1255" y1="260" x2="1325" y2="260"/>
+          <line x1="1265" y1="180" x2="1315" y2="180"/>
+          <line x1="1278" y1="120" x2="1302" y2="120"/>
+          <!-- Diagonal Bracings -->
+          <line x1="1240" y1="340" x2="1315" y2="180"/>
+          <line x1="1340" y1="340" x2="1265" y2="180"/>
+          <line x1="1265" y1="180" x2="1290" y2="80"/>
+          <line x1="1315" y1="180" x2="1290" y2="80"/>
+
+          <!-- Central Cantilever Suspended Trusses -->
+          <path d="M 970 80 Q 1130 190 1290 80" stroke-width="1.8"/>
+          <path d="M 920 310 Q 1130 330 1340 310" stroke-width="2"/>
+          <!-- Vertical hangers -->
+          <line x1="1050" y1="140" x2="1050" y2="315"/>
+          <line x1="1090" y1="165" x2="1090" y2="318"/>
+          <line x1="1130" y1="175" x2="1130" y2="320"/>
+          <line x1="1170" y1="165" x2="1170" y2="318"/>
+          <line x1="1210" y1="140" x2="1210" y2="315"/>
+        </g>
+
+        <!-- Media Elements (Camera on Tripod, Film Reel, Teleprompter) -->
+        <g stroke="url(#goldSkylineGrad)" stroke-width="1.4" fill="none">
+          <!-- Cine Camera on Tripod (Left) -->
+          <g transform="translate(140, 240)">
+            <!-- Matte Box / Lens Hood -->
+            <polygon points="40,25 65,15 65,45 40,35" fill="rgba(212,175,55,0.08)"/>
+            <!-- Camera Body -->
+            <rect x="0" y="15" width="40" height="25" rx="3" fill="rgba(212,175,55,0.12)"/>
+            <!-- Top Film Magazine / Dual Spools -->
+            <circle cx="12" cy="7" r="9"/>
+            <circle cx="28" cy="7" r="9"/>
+            <circle cx="12" cy="7" r="3" fill="#D4AF37"/>
+            <circle cx="28" cy="7" r="3" fill="#D4AF37"/>
+            <!-- Viewfinder -->
+            <path d="M -5 18 L 8 18"/>
+            <rect x="-10" y="15" width="6" height="7" rx="1"/>
+            <!-- Heavy Duty Tripod Legs -->
+            <line x1="20" y1="40" x2="20" y2="55"/>
+            <line x1="20" y1="55" x2="-25" y2="170"/>
+            <line x1="20" y1="55" x2="20" y2="170"/>
+            <line x1="20" y1="55" x2="65" y2="170"/>
+            <!-- Tripod Spreader -->
+            <line x1="-5" y1="120" x2="45" y2="120"/>
+          </g>
+
+          <!-- Vintage Heritage Street Gas Lamp (Far Left) -->
+          <g transform="translate(60, 160)">
+            <!-- Ornate Lantern Top -->
+            <path d="M 0 35 L 12 10 L 24 35 Z"/>
+            <line x1="12" y1="10" x2="12" y2="2"/>
+            <circle cx="12" cy="2" r="2.5" fill="#F3E5AB"/>
+            <!-- Glass Housing -->
+            <polygon points="2,35 22,35 18,65 6,65"/>
+            <!-- Glowing Lantern Flame Core -->
+            <circle cx="12" cy="48" r="18" fill="url(#lampGlow)" stroke="none"/>
+            <circle cx="12" cy="48" r="3" fill="#FFFBEB" stroke="none"/>
+            <!-- Cast Iron Pole & Brackets -->
+            <path d="M 6 65 Q 12 80 12 95 L 12 260"/>
+            <path d="M 18 65 Q 12 80 12 95"/>
+            <path d="M 12 85 Q -3 75 0 95 Q 6 95 12 90"/>
+            <path d="M 12 85 Q 27 75 24 95 Q 18 95 12 90"/>
+          </g>
+
+          <!-- Vintage Kolkata Tramway Car Silhouette (Lower Track) -->
+          <g transform="translate(710, 315)">
+            <!-- Pantograph Collector -->
+            <path d="M 60 0 L 80 20 L 70 30 L 90 30"/>
+            <line x1="60" y1="0" x2="100" y2="0"/>
+            <!-- Tram Roof -->
+            <path d="M 5 30 Q 80 25 155 30 L 155 40 L 5 40 Z" fill="rgba(212,175,55,0.1)"/>
+            <!-- Tram Body -->
+            <rect x="5" y="40" width="150" height="50" rx="3" fill="rgba(212,175,55,0.06)"/>
+            <!-- Windows -->
+            <rect x="15" y="46" width="14" height="18" rx="2"/>
+            <rect x="35" y="46" width="14" height="18" rx="2"/>
+            <rect x="55" y="46" width="14" height="18" rx="2"/>
+            <rect x="75" y="46" width="14" height="18" rx="2"/>
+            <rect x="95" y="46" width="14" height="18" rx="2"/>
+            <rect x="115" y="46" width="14" height="18" rx="2"/>
+            <rect x="135" y="46" width="12" height="18" rx="2"/>
+            <!-- Double Bogie Wheels -->
+            <circle cx="35" cy="95" r="7"/>
+            <circle cx="55" cy="95" r="7"/>
+            <circle cx="105" cy="95" r="7"/>
+            <circle cx="125" cy="95" r="7"/>
+            <line x1="0" y1="95" x2="160" y2="95"/>
+          </g>
+
+          <!-- Heritage Street Gas Lamp (Right) -->
+          <g transform="translate(1480, 160)">
+            <path d="M 0 35 L 12 10 L 24 35 Z"/>
+            <circle cx="12" cy="2" r="2.5" fill="#F3E5AB"/>
+            <polygon points="2,35 22,35 18,65 6,65"/>
+            <circle cx="12" cy="48" r="18" fill="url(#lampGlow)" stroke="none"/>
+            <circle cx="12" cy="48" r="3" fill="#FFFBEB" stroke="none"/>
+            <path d="M 6 65 Q 12 80 12 95 L 12 260"/>
+            <path d="M 18 65 Q 12 80 12 95"/>
+          </g>
+        </g>
+
+        <!-- Dynamic Celluloid Filmstrip "Tapestry" Wave Across Foreground -->
+        <g fill="none">
+          <!-- Film Ribbon Upper Border -->
+          <path d="M -50 380 Q 250 320 550 390 T 1150 360 Q 1400 410 1650 370" stroke="url(#filmGlow)" stroke-width="2.5"/>
+          <!-- Film Ribbon Lower Border -->
+          <path d="M -50 430 Q 250 370 550 440 T 1150 410 Q 1400 460 1650 420" stroke="url(#filmGlow)" stroke-width="2.5"/>
+
+          <!-- Sprocket Perforations along Top Ribbon -->
+          <g stroke="#D4AF37" stroke-width="1" opacity="0.6">
+            <rect x="20" y="365" width="8" height="6" rx="1"/>
+            <rect x="70" y="360" width="8" height="6" rx="1"/>
+            <rect x="120" y="356" width="8" height="6" rx="1"/>
+            <rect x="170" y="352" width="8" height="6" rx="1"/>
+            <rect x="220" y="350" width="8" height="6" rx="1"/>
+            <rect x="270" y="352" width="8" height="6" rx="1"/>
+            <rect x="320" y="356" width="8" height="6" rx="1"/>
+            <rect x="370" y="362" width="8" height="6" rx="1"/>
+            <rect x="420" y="370" width="8" height="6" rx="1"/>
+            <rect x="470" y="378" width="8" height="6" rx="1"/>
+            <rect x="520" y="384" width="8" height="6" rx="1"/>
+            <rect x="570" y="387" width="8" height="6" rx="1"/>
+            <rect x="620" y="385" width="8" height="6" rx="1"/>
+            <rect x="670" y="380" width="8" height="6" rx="1"/>
+            <rect x="720" y="374" width="8" height="6" rx="1"/>
+            <rect x="770" y="368" width="8" height="6" rx="1"/>
+            <rect x="820" y="362" width="8" height="6" rx="1"/>
+            <rect x="870" y="358" width="8" height="6" rx="1"/>
+            <rect x="920" y="356" width="8" height="6" rx="1"/>
+            <rect x="970" y="356" width="8" height="6" rx="1"/>
+            <rect x="1020" y="358" width="8" height="6" rx="1"/>
+            <rect x="1070" y="362" width="8" height="6" rx="1"/>
+            <rect x="1120" y="368" width="8" height="6" rx="1"/>
+            <rect x="1170" y="375" width="8" height="6" rx="1"/>
+            <rect x="1220" y="382" width="8" height="6" rx="1"/>
+            <rect x="1270" y="388" width="8" height="6" rx="1"/>
+            <rect x="1320" y="392" width="8" height="6" rx="1"/>
+            <rect x="1370" y="393" width="8" height="6" rx="1"/>
+            <rect x="1420" y="390" width="8" height="6" rx="1"/>
+            <rect x="1470" y="385" width="8" height="6" rx="1"/>
+            <rect x="1520" y="378" width="8" height="6" rx="1"/>
+            <rect x="1570" y="372" width="8" height="6" rx="1"/>
+          </g>
+
+          <!-- Film Frame Dividers -->
+          <g stroke="url(#filmGlow)" stroke-width="1.2" opacity="0.4">
+            <line x1="160" y1="350" x2="160" y2="400"/>
+            <line x1="360" y1="360" x2="360" y2="410"/>
+            <line x1="560" y1="385" x2="560" y2="435"/>
+            <line x1="760" y1="370" x2="760" y2="420"/>
+            <line x1="960" y1="355" x2="960" y2="405"/>
+            <line x1="1160" y1="370" x2="1160" y2="420"/>
+            <line x1="1360" y1="390" x2="1360" y2="440"/>
+            <line x1="1560" y1="370" x2="1560" y2="420"/>
+          </g>
+        </g>
+
+        <!-- Base River Water Line / Horizon Gradient -->
+        <rect x="0" y="420" width="1600" height="30" fill="url(#goldSkylineGrad)" opacity="0.25"/>
+      </svg>
+    </div>
+
+    <!-- Soft Dark Vignette at Viewport Edges -->
+    <div class="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,transparent_40%,rgba(7,8,11,0.85)_100%)]"></div>
+  </div>
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-gradient-to-r from-neutral-950 via-[#18120c] to-neutral-950 border-b border-amber-900/30 text-xs py-2 text-center text-amber-200/90 font-medium tracking-wider">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+      <div class="hidden sm:flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span>5th Edition Annual Inter-College Media Fest</span>
+      </div>
+      <div class="mx-auto sm:mx-0 flex items-center gap-2">
+        <i class="fa-regular fa-calendar-days text-amber-400"></i>
+        <span class="font-semibold text-amber-300">29th & 30th January, 2027</span>
+        <span class="text-neutral-500">|</span>
+        <span>St. Xavier's University, Rajarhat, Kolkata</span>
+      </div>
+      <div class="hidden md:flex items-center gap-3 text-neutral-400">
+        <a href="mailto:Xavcommm2027@gmail.com" class="hover:text-amber-300 transition-colors flex items-center gap-1">
+          <i class="fa-regular fa-envelope text-xs"></i> Xavcommm2027@gmail.com
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header id="navbar" class="sticky top-0 z-50 transition-all duration-300 bg-[#07080be6] backdrop-blur-md border-b border-neutral-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo & Branding -->
+        <a href="#home" class="flex items-center gap-3.5 group">
+          <div class="w-11 h-11 rounded-full bg-gradient-to-br from-amber-500 via-amber-700 to-amber-950 p-[1.5px] shadow-lg shadow-amber-900/20 group-hover:shadow-amber-600/30 transition-all">
+            <div class="w-full h-full rounded-full bg-[#0d0f14] flex items-center justify-center overflow-hidden">
+              <span class="font-display font-black text-lg bg-gradient-to-r from-amber-200 via-amber-400 to-amber-500 bg-clip-text text-transparent">X</span>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center gap-1.5">
+              <span class="font-display font-bold text-xl sm:text-2xl text-white tracking-wider">XAVCOMM<span class="text-amber-400">'27</span></span>
+            </div>
+            <p class="text-[10px] tracking-widest uppercase text-amber-300/80 font-medium">St. Xavier's University, Kolkata</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-medium tracking-wide text-neutral-300">
+          <a href="#about" class="hover:text-amber-300 transition-colors">About</a>
+          <a href="#theme" class="hover:text-amber-300 transition-colors">Theme</a>
+          <a href="#poster" class="hover:text-amber-300 transition-colors text-amber-400 font-semibold flex items-center gap-1.5"><i class="fa-solid fa-image text-xs"></i> Official Poster</a>
+          <a href="#highlights" class="hover:text-amber-300 transition-colors">Past Editions</a>
+          <a href="#sponsors" class="hover:text-amber-300 transition-colors">Past Sponsors</a>
+          <a href="#tiers" class="hover:text-amber-300 transition-colors">Sponsorship Tiers</a>
+          <a href="#deliverables" class="hover:text-amber-300 transition-colors">Deliverables</a>
+          <a href="#convenors" class="hover:text-amber-300 transition-colors">Letter</a>
+          <a href="#contact" class="hover:text-amber-300 transition-colors">Contact</a>
+        </nav>
+
+        <!-- CTA & Mobile Toggle -->
+        <div class="flex items-center gap-3">
+          <a href="#tiers" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-gradient-to-r from-amber-500 via-amber-600 to-yellow-600 text-neutral-950 shadow-md shadow-amber-600/20 hover:shadow-amber-500/40 hover:scale-[1.02] active:scale-95 transition-all">
+            <i class="fa-solid fa-handshake"></i>
+            <span>Partner With Us</span>
+          </a>
+
+          <button id="mobileMenuBtn" aria-label="Toggle Navigation" class="lg:hidden p-2 rounded-lg bg-neutral-900 border border-neutral-800 text-neutral-300 hover:text-white focus:outline-none">
+            <i class="fa-solid fa-bars text-lg"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Dropdown -->
+    <div id="mobileMenu" class="hidden lg:hidden border-b border-neutral-800 bg-[#0d0e13]/98 px-6 py-6 backdrop-blur-xl">
+      <nav class="flex flex-col gap-4 text-base font-medium">
+        <a href="#about" class="mobile-link text-neutral-300 hover:text-amber-300 py-1">About SXUK & Mass Comm</a>
+        <a href="#theme" class="mobile-link text-neutral-300 hover:text-amber-300 py-1">Theme: Tapestry of Stories</a>
+        <a href="#poster" class="mobile-link text-amber-400 font-semibold hover:text-amber-300 py-1 flex items-center gap-2"><i class="fa-solid fa-image"></i> Official Festival Poster</a>
+        <a href="#highlights" class="mobile-link text-neutral-300 hover:text-amber-300 py-1">Past Events & Stars</a>
+        <a href="#sponsors" class="mobile-link text-neutral-300 hover:text-amber-300 py-1">Previous Sponsors</a>
+        <a href="#tiers" class="mobile-link text-neutral-300 hover:text-amber-300 py-1">Sponsorship Packages</a>
+        <a href="#deliverables" class="mobile-link text-neutral-300 hover:text-amber-300 py-1">Deliverables Matrix</a>
+        <a href="#convenors" class="mobile-link text-neutral-300 hover:text-amber-300 py-1">Letter to Sponsors</a>
+        <a href="#contact" class="mobile-link text-neutral-300 hover:text-amber-300 py-1">Get In Touch</a>
+        <div class="pt-3 border-t border-neutral-800">
+          <a href="#tiers" class="mobile-link w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg text-xs font-semibold tracking-wider uppercase bg-amber-500 text-neutral-950 font-bold">
+            <i class="fa-solid fa-handshake"></i>
+            <span>Become a Sponsor</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative pt-12 pb-24 md:py-28 lg:py-32 overflow-hidden border-b border-neutral-800/60">
+    <!-- Vintage Film Strip Border Decoration (Top) -->
+    <div class="filmstrip-border top-0 opacity-40"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center max-w-4xl mx-auto">
+        
+        <!-- University & Alumni Association Header -->
+        <div class="inline-flex flex-col sm:flex-row items-center gap-2 sm:gap-4 px-4 py-1.5 rounded-full bg-neutral-900/80 border border-amber-600/30 text-amber-200/90 text-xs sm:text-sm font-medium mb-6 shadow-inner">
+          <span class="tracking-wide">St. Xavier's University, Kolkata</span>
+          <span class="hidden sm:inline text-neutral-600">•</span>
+          <span class="text-neutral-400">In association with SXUK Alumni Association</span>
+        </div>
+
+        <p class="text-xs sm:text-sm uppercase tracking-[0.35em] text-amber-400 font-semibold mb-3">
+          Department of Mass Communication Presents
+        </p>
+
+        <!-- Main Title -->
+        <h1 class="font-display font-black text-5xl sm:text-7xl md:text-8xl tracking-tight text-white mb-2">
+          Xavcomm<span class="text-amber-400 drop-shadow-[0_0_35px_rgba(212,175,55,0.4)]">’27</span>
+        </h1>
+
+        <!-- Theme Title in Calligraphic Serif -->
+        <div class="relative my-4 inline-block">
+          <span class="font-serif italic text-3xl sm:text-5xl md:text-6xl text-amber-200 font-normal tracking-wide block">
+            “Tapestry of Stories”
+          </span>
+          <div class="w-32 h-[1px] bg-gradient-to-r from-transparent via-amber-400 to-transparent mx-auto mt-3"></div>
+        </div>
+
+        <p class="text-base sm:text-xl text-neutral-300 font-light max-w-2xl mx-auto leading-relaxed mt-4 mb-8">
+          The 5th Grand Edition of Eastern India's flagship inter-college media festival. Celebrating the voices, narratives, and visionary communicators transforming today's world.
+        </p>
+
+        <!-- Dates & Location Highlights -->
+        <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-6 mb-10 text-sm text-neutral-300">
+          <div class="flex items-center gap-2.5 px-4 py-2 rounded-xl bg-neutral-900/90 border border-neutral-800">
+            <i class="fa-regular fa-calendar-check text-amber-400"></i>
+            <span class="font-semibold text-white">29th & 30th January, 2027</span>
+          </div>
+          <div class="flex items-center gap-2.5 px-4 py-2 rounded-xl bg-neutral-900/90 border border-neutral-800">
+            <i class="fa-solid fa-location-dot text-amber-400"></i>
+            <span>SXUK Campus, Rajarhat, Kolkata</span>
+          </div>
+          <div class="flex items-center gap-2.5 px-4 py-2 rounded-xl bg-neutral-900/90 border border-neutral-800">
+            <i class="fa-solid fa-users text-amber-400"></i>
+            <span>2000–3000 Daily Footfall</span>
+          </div>
+        </div>
+
+        <!-- Action CTAs -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="#tiers" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-bold text-sm tracking-wider uppercase bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 text-neutral-950 shadow-xl shadow-amber-500/20 hover:shadow-amber-500/40 hover:-translate-y-0.5 transition-all">
+            <i class="fa-solid fa-award"></i>
+            <span>Explore Sponsorship Deck</span>
+          </a>
+          <a href="assets/docs/SponsorshipBrochureXavcomm27.pdf" download="Xavcomm27_Sponsorship_Brochure.pdf" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-sm tracking-wider uppercase bg-neutral-900/90 text-amber-300 border border-amber-600/40 hover:bg-neutral-800 hover:border-amber-400 hover:text-white hover:-translate-y-0.5 transition-all shadow-lg">
+            <i class="fa-solid fa-file-arrow-down text-amber-400"></i>
+            <span>Download Brochure (PDF)</span>
+          </a>
+          <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-sm tracking-wider uppercase bg-neutral-900/90 text-neutral-200 border border-neutral-700 hover:border-amber-500/60 hover:text-white hover:-translate-y-0.5 transition-all">
+            <i class="fa-regular fa-paper-plane"></i>
+            <span>Contact Organizers</span>
+          </a>
+        </div>
+
+        <!-- Live Countdown Timer -->
+        <div class="mt-14 pt-8 border-t border-neutral-800/80">
+          <p class="text-xs uppercase tracking-widest text-neutral-400 mb-4 font-medium">Countdown to the Grand Celebration</p>
+          <div class="grid grid-cols-4 gap-2 sm:gap-4 max-w-lg mx-auto">
+            <div class="bg-neutral-900/80 border border-neutral-800 rounded-xl p-3 sm:p-4 text-center">
+              <span id="cd-days" class="font-display font-bold text-2xl sm:text-4xl text-amber-400">--</span>
+              <span class="block text-[10px] sm:text-xs text-neutral-400 uppercase tracking-wider mt-1">Days</span>
+            </div>
+            <div class="bg-neutral-900/80 border border-neutral-800 rounded-xl p-3 sm:p-4 text-center">
+              <span id="cd-hours" class="font-display font-bold text-2xl sm:text-4xl text-amber-400">--</span>
+              <span class="block text-[10px] sm:text-xs text-neutral-400 uppercase tracking-wider mt-1">Hours</span>
+            </div>
+            <div class="bg-neutral-900/80 border border-neutral-800 rounded-xl p-3 sm:p-4 text-center">
+              <span id="cd-minutes" class="font-display font-bold text-2xl sm:text-4xl text-amber-400">--</span>
+              <span class="block text-[10px] sm:text-xs text-neutral-400 uppercase tracking-wider mt-1">Mins</span>
+            </div>
+            <div class="bg-neutral-900/80 border border-neutral-800 rounded-xl p-3 sm:p-4 text-center">
+              <span id="cd-seconds" class="font-display font-bold text-2xl sm:text-4xl text-amber-400">--</span>
+              <span class="block text-[10px] sm:text-xs text-neutral-400 uppercase tracking-wider mt-1">Secs</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Heritage City Skyline Silhouette Accent -->
+    <div class="mt-14 relative w-full h-16 bg-gradient-to-t from-[#0d0f15] to-transparent flex items-center justify-center opacity-60">
+      <div class="flex items-center gap-8 text-neutral-600 text-xs tracking-widest uppercase">
+        <span><i class="fa-solid fa-camera-retro text-amber-500/70 mr-1.5"></i> People</span>
+        <span>•</span>
+        <span><i class="fa-solid fa-microphone-lines text-amber-500/70 mr-1.5"></i> Perspectives</span>
+        <span>•</span>
+        <span><i class="fa-solid fa-film text-amber-500/70 mr-1.5"></i> Media</span>
+        <span>•</span>
+        <span><i class="fa-solid fa-feather-pointed text-amber-500/70 mr-1.5"></i> Stories</span>
+        <span>•</span>
+        <span><i class="fa-solid fa-masks-theater text-amber-500/70 mr-1.5"></i> Culture</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Statistics / At A Glance Banner -->
+  <section class="py-10 bg-[#0d0e14]/75 backdrop-blur-md border-b border-neutral-800/80 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-neutral-800">
+        
+        <div class="pt-4 md:pt-0">
+          <div class="font-display font-extrabold text-3xl sm:text-4xl text-amber-300">2,500+</div>
+          <p class="text-xs sm:text-sm text-neutral-400 mt-1 uppercase tracking-wider">Footfall Per Day</p>
+        </div>
+
+        <div class="pt-4 md:pt-0">
+          <div class="font-display font-extrabold text-3xl sm:text-4xl text-amber-300">30+</div>
+          <p class="text-xs sm:text-sm text-neutral-400 mt-1 uppercase tracking-wider">Colleges & Universities</p>
+        </div>
+
+        <div class="pt-4 md:pt-0">
+          <div class="font-display font-extrabold text-3xl sm:text-4xl text-amber-300">12+</div>
+          <p class="text-xs sm:text-sm text-neutral-400 mt-1 uppercase tracking-wider">Competitive Domains</p>
+        </div>
+
+        <div class="pt-4 md:pt-0">
+          <div class="font-display font-extrabold text-3xl sm:text-4xl text-amber-300">5th</div>
+          <p class="text-xs sm:text-sm text-neutral-400 mt-1 uppercase tracking-wider">Milestone Edition</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section: SXUK & Dept of Mass Communication -->
+  <section id="about" class="py-20 md:py-28 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-semibold uppercase tracking-[0.25em] text-amber-400">Institutional Legacy</span>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl md:text-5xl text-white mt-2">
+          Excellence in Higher Education
+        </h2>
+        <div class="w-20 h-0.5 bg-amber-500 mx-auto mt-4 mb-5"></div>
+        <p class="text-neutral-400 text-sm sm:text-base leading-relaxed">
+          Rooted in a profound 160-year Xaverian tradition of forming "men and women for others," nurturing critical thinkers, creative visionaries, and ethical leaders.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+        
+        <!-- About SXUK Card -->
+        <div class="bg-neutral-900/60 border border-neutral-800 hover:border-amber-600/40 rounded-2xl p-8 sm:p-10 flex flex-col justify-between transition-all group relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-amber-500/5 rounded-full blur-2xl group-hover:bg-amber-500/10 transition-all"></div>
+          
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <span class="px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-amber-500/10 text-amber-400 border border-amber-500/20">
+                The University
+              </span>
+              <i class="fa-solid fa-landmark text-2xl text-neutral-600 group-hover:text-amber-400 transition-colors"></i>
+            </div>
+            
+            <h3 class="font-display font-bold text-2xl sm:text-3xl text-white mb-4">
+              St. Xavier's University, Kolkata
+            </h3>
+            
+            <p class="text-neutral-300 text-sm sm:text-base leading-relaxed mb-4">
+              St. Xavier’s University, Kolkata (SXUK) was born out of a vision to create a centre of excellence in higher education in West Bengal. In 2011, Rev. Fr. Dr. John Felix Raj, S.J., and the St. Xavier's College (Calcutta) Alumni Association conceived 'SXC Vision 2020', paving the way for SXUK.
+            </p>
+            <p class="text-neutral-400 text-sm leading-relaxed mb-4">
+              The Government of West Bengal generously allocated a sprawling 17-acre campus at Rajarhat. Following the St. Xavier's University, Kolkata Act 2016, the university was formally inaugurated on July 7, 2017.
+            </p>
+            <p class="text-neutral-400 text-sm leading-relaxed">
+              Today, SXUK stands as a testament to academic excellence, innovation, and social responsibility across Commerce, Arts, Social Studies, Xavier Business School (AICTE MBA), and Xavier Law School (BCI-approved law programs).
+            </p>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-neutral-800/80 flex items-center justify-between text-xs text-neutral-400 font-medium">
+            <span><i class="fa-solid fa-map-pin text-amber-400 mr-1.5"></i> 17-Acre Rajarhat Campus</span>
+            <span><i class="fa-solid fa-award text-amber-400 mr-1.5"></i> Jesuit Tradition</span>
+          </div>
+        </div>
+
+        <!-- About Department of Mass Communication Card -->
+        <div class="bg-neutral-900/60 border border-neutral-800 hover:border-amber-600/40 rounded-2xl p-8 sm:p-10 flex flex-col justify-between transition-all group relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-amber-500/5 rounded-full blur-2xl group-hover:bg-amber-500/10 transition-all"></div>
+
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <span class="px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-amber-500/10 text-amber-400 border border-amber-500/20">
+                The Host Department
+              </span>
+              <i class="fa-solid fa-clapperboard text-2xl text-neutral-600 group-hover:text-amber-400 transition-colors"></i>
+            </div>
+            
+            <h3 class="font-display font-bold text-2xl sm:text-3xl text-white mb-4">
+              Department of Mass Communication
+            </h3>
+            
+            <p class="text-neutral-300 text-sm sm:text-base leading-relaxed mb-4">
+              Established in 2017 under the Faculty of Arts and Social Studies, the Department upholds the highest standards of media pedagogy, preparing critical communicators and versatile creators for the rapidly transforming global landscape.
+            </p>
+            
+            <!-- Key Facilities & Programs Grid -->
+            <div class="grid grid-cols-2 gap-3 my-5">
+              <div class="bg-[#0b0c10] p-3 rounded-xl border border-neutral-800/80 text-xs">
+                <span class="text-amber-300 font-semibold block mb-0.5"><i class="fa-solid fa-graduation-cap mr-1"></i> Academic Scope</span>
+                <span class="text-neutral-400">M.A., B.A. (Hons NEP 2020), & Ph.D. Research</span>
+              </div>
+              <div class="bg-[#0b0c10] p-3 rounded-xl border border-neutral-800/80 text-xs">
+                <span class="text-amber-300 font-semibold block mb-0.5"><i class="fa-solid fa-video mr-1"></i> Production Studios</span>
+                <span class="text-neutral-400">Multi-camera setups & Teleprompter studios</span>
+              </div>
+              <div class="bg-[#0b0c10] p-3 rounded-xl border border-neutral-800/80 text-xs">
+                <span class="text-amber-300 font-semibold block mb-0.5"><i class="fa-solid fa-headphones mr-1"></i> Sound & Audio Labs</span>
+                <span class="text-neutral-400">Acoustically tuned pro recording environments</span>
+              </div>
+              <div class="bg-[#0b0c10] p-3 rounded-xl border border-neutral-800/80 text-xs">
+                <span class="text-amber-300 font-semibold block mb-0.5"><i class="fa-brands fa-apple mr-1"></i> Post-Production</span>
+                <span class="text-neutral-400">High-end Mac lab & industry editing software</span>
+              </div>
+            </div>
+
+            <p class="text-neutral-400 text-sm leading-relaxed">
+              Faculty comprises experienced academic scholars and seasoned industry veterans delivering rigorous theoretical insight paired with intensive hands-on creative training.
+            </p>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-neutral-800/80 flex items-center justify-between text-xs text-neutral-400 font-medium">
+            <span><i class="fa-solid fa-microchip text-amber-400 mr-1.5"></i> Advanced Media Tech</span>
+            <span><i class="fa-solid fa-pen-nib text-amber-400 mr-1.5"></i> Storytelling at Heart</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Festival Theme: Tapestry of Stories -->
+  <section id="theme" class="py-20 md:py-28 bg-[#0b0c11]/75 backdrop-blur-md border-y border-neutral-800/80 relative overflow-hidden">
+    <!-- Ambient vintage reel watermark -->
+    <div class="absolute -right-20 top-1/2 -translate-y-1/2 opacity-5 pointer-events-none text-[320px] text-amber-400">
+      <i class="fa-solid fa-film"></i>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left: Theme Narrative -->
+        <div class="lg:col-span-7">
+          <span class="text-xs font-semibold uppercase tracking-[0.25em] text-amber-400">Festival Edition 2027</span>
+          <h2 class="font-display font-bold text-3xl sm:text-4xl md:text-5xl text-white mt-2 mb-3">
+            The Theme: <span class="font-serif italic font-normal text-amber-300">Tapestry of Stories</span>
+          </h2>
+          <div class="w-20 h-0.5 bg-amber-500 mb-6"></div>
+
+          <p class="text-neutral-300 text-base sm:text-lg leading-relaxed mb-6">
+            <strong>Xavcomm’27</strong> is envisioned as a multifaceted celebration of creativity, communication, and culture. With a distinctive artistic outlook, it serves as an electric platform for young communicators, storytellers, and creators to explore the ever-evolving world of media and the arts.
+          </p>
+
+          <p class="text-neutral-400 text-sm sm:text-base leading-relaxed mb-6">
+            Rooted in the spirit of innovation and collaboration, Xavcomm provides a vibrant space for students to showcase their talents across diverse disciplines — from journalism and advertising to photography, filmmaking, and digital expression.
+          </p>
+
+          <blockquote class="p-4 sm:p-5 rounded-xl bg-neutral-900/90 border-l-4 border-amber-500 text-neutral-300 italic text-sm sm:text-base mb-6 font-serif">
+            “Through its thoughtfully curated events and exhibitions, Xavcomm reflects the vision of Mass Communication as both an art and a responsibility — one that informs, inspires, and influences society.”
+          </blockquote>
+
+          <p class="text-neutral-400 text-sm sm:text-base leading-relaxed">
+            Each year, Xavcomm brings together participants from colleges across the region, uniting creative minds under one roof. It offers an exceptional opportunity for brands and organizations to connect with an energetic, media-savvy youth audience, while supporting the growth of future communicators and cultural leaders.
+          </p>
+        </div>
+
+        <!-- Right: Creative Pillars Cards -->
+        <div class="lg:col-span-5 space-y-4">
+          
+          <div class="p-5 rounded-xl bg-neutral-900/80 border border-neutral-800 hover:border-amber-500/50 transition-all flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center shrink-0 border border-amber-500/20">
+              <i class="fa-solid fa-newspaper text-xl"></i>
+            </div>
+            <div>
+              <h4 class="font-display font-bold text-white text-base">Journalism & Reporting</h4>
+              <p class="text-neutral-400 text-xs mt-1 leading-relaxed">Investigative reporting, ethical journalism, news broadcast drills, and critical media critique.</p>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-xl bg-neutral-900/80 border border-neutral-800 hover:border-amber-500/50 transition-all flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center shrink-0 border border-amber-500/20">
+              <i class="fa-solid fa-bullhorn text-xl"></i>
+            </div>
+            <div>
+              <h4 class="font-display font-bold text-white text-base">Advertising & PR Strategy</h4>
+              <p class="text-neutral-400 text-xs mt-1 leading-relaxed">Ad pitch challenges, brand crisis management, viral campaign ideation, and consumer psychology.</p>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-xl bg-neutral-900/80 border border-neutral-800 hover:border-amber-500/50 transition-all flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center shrink-0 border border-amber-500/20">
+              <i class="fa-solid fa-film text-xl"></i>
+            </div>
+            <div>
+              <h4 class="font-display font-bold text-white text-base">Cinema & Video Production</h4>
+              <p class="text-neutral-400 text-xs mt-1 leading-relaxed">Short film competitions, scriptwriting, mobile cinematography, and documentary filmmaking.</p>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-xl bg-neutral-900/80 border border-neutral-800 hover:border-amber-500/50 transition-all flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center shrink-0 border border-amber-500/20">
+              <i class="fa-solid fa-camera text-xl"></i>
+            </div>
+            <div>
+              <h4 class="font-display font-bold text-white text-base">Photography & Digital Art</h4>
+              <p class="text-neutral-400 text-xs mt-1 leading-relaxed">Street photography, photojournalism galleries, graphic design, and short-form digital storytelling.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Official Festival Poster Section -->
+  <section id="poster" class="py-20 md:py-28 relative bg-[#08090d]/75 backdrop-blur-md border-b border-neutral-800/80 overflow-hidden">
+    <!-- Ambient Gold Glow -->
+    <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-amber-600/5 blur-[160px] pointer-events-none -z-10"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-semibold uppercase tracking-[0.25em] text-amber-400">Visual Identity</span>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl md:text-5xl text-white mt-2">
+          Official Festival Poster
+        </h2>
+        <div class="w-20 h-0.5 bg-amber-500 mx-auto mt-4 mb-4"></div>
+        <p class="text-neutral-400 text-sm sm:text-base leading-relaxed">
+          The defining artistic centerpiece of Xavcomm'27 — celebrating the intersection of Kolkata heritage, student journalism, lenscraft, and narrative expression.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Left: Rendered Poster Canvas Showcase -->
+        <div class="lg:col-span-6 flex justify-center">
+          <div class="relative group max-w-md w-full">
+            <!-- Decorative Golden Border Ring -->
+            <div class="absolute -inset-1.5 bg-gradient-to-r from-amber-600 via-amber-400 to-yellow-600 rounded-3xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+            
+            <div class="relative rounded-2xl bg-[#0c0e14] p-3 sm:p-4 border border-amber-600/40 shadow-2xl">
+              <div id="posterLoading" class="py-20 text-center text-amber-400 text-xs">
+                <i class="fa-solid fa-spinner fa-spin text-2xl mb-3 block"></i>
+                <span>Rendering High-Resolution Official Poster...</span>
+              </div>
+              <canvas id="posterCanvas" class="hidden w-full h-auto rounded-xl shadow-lg border border-neutral-800"></canvas>
+              
+              <!-- Quick Overlay Action -->
+              <div class="mt-3 flex items-center justify-between px-2 pt-2 text-xs text-neutral-400">
+                <span class="flex items-center gap-1.5 text-amber-300">
+                  <i class="fa-solid fa-certificate"></i> Verified Official Poster
+                </span>
+                <a href="assets/docs/Xavcomm27_Official_Poster.pdf" target="_blank" class="hover:text-amber-400 transition-colors flex items-center gap-1">
+                  <span>View PDF</span> <i class="fa-solid fa-up-right-from-square text-[10px]"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Official Poster Details & Download CTAs -->
+        <div class="lg:col-span-6 space-y-6">
+          
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-300 text-xs font-semibold">
+            <i class="fa-solid fa-bullhorn"></i> Inter-College & University Departmental Fest
+          </div>
+
+          <h3 class="font-display font-black text-3xl sm:text-4xl text-white tracking-tight">
+            XAVCOMM<span class="text-amber-400">'27</span>
+            <span class="block font-serif italic font-normal text-2xl sm:text-3xl text-amber-200 mt-1">
+              “Tapestry of Stories”
+            </span>
+          </h3>
+
+          <p class="text-neutral-300 text-sm sm:text-base leading-relaxed">
+            Organised by the <strong>Department of Mass Communication</strong>, St. Xavier's University, Kolkata in association with <strong>St. Xavier's University Kolkata Alumni Association</strong>.
+          </p>
+
+          <!-- Core Attributes Checklist -->
+          <div class="grid grid-cols-2 gap-3 text-xs">
+            <div class="p-3.5 rounded-xl bg-neutral-900/80 border border-neutral-800">
+              <strong class="text-amber-300 block mb-0.5"><i class="fa-regular fa-calendar-check mr-1"></i> Dates</strong>
+              <span class="text-neutral-300">29th — 30th January, 2027</span>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-neutral-900/80 border border-neutral-800">
+              <strong class="text-amber-300 block mb-0.5"><i class="fa-solid fa-location-dot mr-1"></i> Venue</strong>
+              <span class="text-neutral-300">SXUK Campus, Rajarhat</span>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-neutral-900/80 border border-neutral-800">
+              <strong class="text-amber-300 block mb-0.5"><i class="fa-solid fa-quote-left mr-1"></i> Core Motto</strong>
+              <span class="text-neutral-300">Stories • People • Change</span>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-neutral-900/80 border border-neutral-800">
+              <strong class="text-amber-300 block mb-0.5"><i class="fa-solid fa-layer-group mr-1"></i> Focus Domains</strong>
+              <span class="text-neutral-300">Film, PR, Ad, Journalism</span>
+            </div>
+          </div>
+
+          <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+            Feel free to download the original official artwork for college display boards, sponsorship review, and contingent briefings.
+          </p>
+
+          <!-- Direct Download Buttons -->
+          <div class="flex flex-col sm:flex-row gap-3 pt-2">
+            <a href="assets/docs/Xavcomm27_Official_Poster.pdf" download="Xavcomm27_Official_Poster.pdf" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 text-neutral-950 shadow-lg shadow-amber-500/20 hover:shadow-amber-500/40 hover:-translate-y-0.5 transition-all">
+              <i class="fa-solid fa-download"></i>
+              <span>Download Official Poster (PDF)</span>
+            </a>
+
+            <a href="assets/docs/Xavcomm27_Official_Poster.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-xs uppercase tracking-wider bg-neutral-900 text-amber-300 border border-amber-600/40 hover:bg-neutral-800 hover:text-white transition-all">
+              <i class="fa-solid fa-expand"></i>
+              <span>Open In New Tab</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Previous Events & Luminaries -->
+  <section id="highlights" class="py-20 md:py-28 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-semibold uppercase tracking-[0.25em] text-amber-400">Hall of Fame</span>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl md:text-5xl text-white mt-2">
+          Previous Events & Star Performers
+        </h2>
+        <div class="w-20 h-0.5 bg-amber-500 mx-auto mt-4 mb-5"></div>
+        <p class="text-neutral-400 text-sm sm:text-base leading-relaxed">
+          Celebrating remarkable milestones, renowned personalities, and electrifying musical acts featured at St. Xavier's University and Xavcomm editions. Click any card to visit official pages.
+        </p>
+      </div>
+
+      <!-- Highlights Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Shashi Tharoor -->
+        <a href="https://www.shashitharoor.in/" target="_blank" rel="noopener noreferrer" class="group bg-neutral-900/80 rounded-2xl border border-neutral-800 hover:border-amber-500/50 overflow-hidden transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+          <div class="p-6">
+            <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-4 border border-amber-500/20 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-user-graduate text-xl"></i>
+            </div>
+            <span class="text-[11px] font-semibold uppercase tracking-wider text-amber-400">Chief Guest</span>
+            <h3 class="font-display font-bold text-xl text-white mt-1 mb-2 group-hover:text-amber-300 transition-colors">Dr. Shashi Tharoor</h3>
+            <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+              Distinguished diplomat, parliamentarian, and author delivered an inspiring address at the 7th Convocation Ceremony of St. Xavier's University.
+            </p>
+          </div>
+          <div class="px-6 py-3 bg-[#0d0f14] border-t border-neutral-800/80 text-xs text-amber-400/90 font-medium flex items-center justify-between group-hover:text-amber-300">
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-globe text-xs"></i> Visit Official Site (shashitharoor.in)</span>
+            <i class="fa-solid fa-arrow-up-right-from-square text-neutral-500 group-hover:text-amber-400 transition-colors"></i>
+          </div>
+        </a>
+
+        <!-- Shreya Jain (Xavrang'24) -->
+        <a href="https://www.instagram.com/xavrang27_?utm_source=ig_web_button_share_sheet&psln=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="group bg-neutral-900/80 rounded-2xl border border-neutral-800 hover:border-amber-500/50 overflow-hidden transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+          <div class="p-6">
+            <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-4 border border-amber-500/20 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-microphone text-xl"></i>
+            </div>
+            <span class="text-[11px] font-semibold uppercase tracking-wider text-amber-400">Live Concert</span>
+            <h3 class="font-display font-bold text-xl text-white mt-1 mb-2 group-hover:text-amber-300 transition-colors">Shreya Jain</h3>
+            <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+              Sensational vocalist and playback singer captivated thousands of energetic students in a high-octane headlining performance at Xavrang’24.
+            </p>
+          </div>
+          <div class="px-6 py-3 bg-[#0d0f14] border-t border-neutral-800/80 text-xs text-amber-400/90 font-medium flex items-center justify-between group-hover:text-amber-300">
+            <span class="flex items-center gap-1.5"><i class="fa-brands fa-instagram text-pink-400"></i> Xavrang’24 • View @xavrang27_</span>
+            <i class="fa-solid fa-arrow-up-right-from-square text-neutral-500 group-hover:text-amber-400 transition-colors"></i>
+          </div>
+        </a>
+
+        <!-- Asees Kaur (Xavrang'26) -->
+        <a href="https://www.instagram.com/xavrang27_?utm_source=ig_web_button_share_sheet&psln=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="group bg-neutral-900/80 rounded-2xl border border-neutral-800 hover:border-amber-500/50 overflow-hidden transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+          <div class="p-6">
+            <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-4 border border-amber-500/20 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-music text-xl"></i>
+            </div>
+            <span class="text-[11px] font-semibold uppercase tracking-wider text-amber-400">Headliner</span>
+            <h3 class="font-display font-bold text-xl text-white mt-1 mb-2 group-hover:text-amber-300 transition-colors">Asees Kaur</h3>
+            <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+              Bollywood’s prominent playback artist behind chart-topping tracks mesmerized the audience during an unforgettable musical night at Xavrang’26.
+            </p>
+          </div>
+          <div class="px-6 py-3 bg-[#0d0f14] border-t border-neutral-800/80 text-xs text-amber-400/90 font-medium flex items-center justify-between group-hover:text-amber-300">
+            <span class="flex items-center gap-1.5"><i class="fa-brands fa-instagram text-pink-400"></i> Xavrang’26 • View @xavrang27_</span>
+            <i class="fa-solid fa-arrow-up-right-from-square text-neutral-500 group-hover:text-amber-400 transition-colors"></i>
+          </div>
+        </a>
+
+        <!-- Yellow Taxi Band (Xavcomm'26) -->
+        <a href="https://www.instagram.com/masscomm_sxu?utm_source=ig_web_button_share_sheet&vrfl=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="group bg-neutral-900/80 rounded-2xl border border-neutral-800 hover:border-amber-500/50 overflow-hidden transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+          <div class="p-6">
+            <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-4 border border-amber-500/20 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-guitar text-xl"></i>
+            </div>
+            <span class="text-[11px] font-semibold uppercase tracking-wider text-amber-400">Band Performance</span>
+            <h3 class="font-display font-bold text-xl text-white mt-1 mb-2 group-hover:text-amber-300 transition-colors">Yellow Taxi</h3>
+            <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+              Kolkata’s beloved fusion ensemble brought supreme nostalgia and energetic indie tunes to the main stage of Xavcomm’26.
+            </p>
+          </div>
+          <div class="px-6 py-3 bg-[#0d0f14] border-t border-neutral-800/80 text-xs text-amber-400/90 font-medium flex items-center justify-between group-hover:text-amber-300">
+            <span class="flex items-center gap-1.5"><i class="fa-brands fa-instagram text-pink-400"></i> Xavcomm’26 • View @masscomm_sxu</span>
+            <i class="fa-solid fa-arrow-up-right-from-square text-neutral-500 group-hover:text-amber-400 transition-colors"></i>
+          </div>
+        </a>
+
+        <!-- Tatrix (Xavcomm'25) -->
+        <a href="https://www.instagram.com/masscomm_sxu?utm_source=ig_web_button_share_sheet&vrfl=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="group bg-neutral-900/80 rounded-2xl border border-neutral-800 hover:border-amber-500/50 overflow-hidden transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+          <div class="p-6">
+            <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-4 border border-amber-500/20 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-drum text-xl"></i>
+            </div>
+            <span class="text-[11px] font-semibold uppercase tracking-wider text-amber-400">Indie Beat</span>
+            <h3 class="font-display font-bold text-xl text-white mt-1 mb-2 group-hover:text-amber-300 transition-colors">Tatrix</h3>
+            <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+              Power-packed alternative rock band performance setting the stage ablaze with cutting-edge student energy at Xavcomm’25.
+            </p>
+          </div>
+          <div class="px-6 py-3 bg-[#0d0f14] border-t border-neutral-800/80 text-xs text-amber-400/90 font-medium flex items-center justify-between group-hover:text-amber-300">
+            <span class="flex items-center gap-1.5"><i class="fa-brands fa-instagram text-pink-400"></i> Xavcomm’25 • View @masscomm_sxu</span>
+            <i class="fa-solid fa-arrow-up-right-from-square text-neutral-500 group-hover:text-amber-400 transition-colors"></i>
+          </div>
+        </a>
+
+        <!-- Mass Communication Creative Showcases (Xavcomm Legacy) -->
+        <a href="https://www.instagram.com/masscomm_sxu?utm_source=ig_web_button_share_sheet&vrfl=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="group bg-gradient-to-br from-amber-950/30 via-neutral-900/80 to-neutral-900/80 rounded-2xl border border-amber-600/30 hover:border-amber-500/60 overflow-hidden transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+          <div class="p-6">
+            <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-300 flex items-center justify-center mb-4 border border-amber-500/30 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-trophy text-xl"></i>
+            </div>
+            <span class="text-[11px] font-semibold uppercase tracking-wider text-amber-300">Inter-College Fest</span>
+            <h3 class="font-display font-bold text-xl text-white mt-1 mb-2 group-hover:text-amber-300 transition-colors">30+ College Contingents</h3>
+            <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+              Over thirty premier colleges and universities contest across competitive media formats: Ad-Mania, Street Theatre, Photojournalism, and Short Film Screenings.
+            </p>
+          </div>
+          <div class="px-6 py-3 bg-[#0d0f14] border-t border-neutral-800/80 text-xs text-amber-300 font-medium flex items-center justify-between">
+            <span class="flex items-center gap-1.5"><i class="fa-brands fa-instagram text-pink-400"></i> Xavcomm Legacy • @masscomm_sxu</span>
+            <i class="fa-solid fa-arrow-up-right-from-square text-neutral-500 group-hover:text-amber-400 transition-colors"></i>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Previous Sponsors Wall -->
+  <section id="sponsors" class="py-20 md:py-24 bg-[#090a0e]/75 backdrop-blur-md border-y border-neutral-800/80 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-semibold uppercase tracking-[0.25em] text-amber-400">Trusted By Leading Brands</span>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl text-white mt-2">
+          Previous Sponsors & Brand Partners
+        </h2>
+        <div class="w-20 h-0.5 bg-amber-500 mx-auto mt-4 mb-4"></div>
+        <p class="text-neutral-400 text-sm sm:text-base leading-relaxed">
+          Xavcomm has proudly partnered with India's most recognized corporate powerhouses, youth brands, and premier media networks.
+        </p>
+      </div>
+
+      <!-- Sponsor Brand Badges Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+        
+        <div class="brand-card">
+          <span class="text-red-500 font-serif font-black text-xl italic tracking-tight">Coca-Cola</span>
+        </div>
+
+        <div class="brand-card">
+          <div class="flex items-center gap-1.5 font-bold text-lg text-pink-500">
+            <i class="fa-solid fa-bag-shopping"></i> Myntra
+          </div>
+        </div>
+
+        <div class="brand-card">
+          <div class="text-blue-400 font-bold text-sm tracking-wider uppercase">
+            TATA Gluco+
+          </div>
+        </div>
+
+        <div class="brand-card">
+          <div class="text-emerald-400 font-black text-lg italic">
+            Real <span class="text-xs font-sans text-neutral-400 not-italic block -mt-1">Fruit Power</span>
+          </div>
+        </div>
+
+        <div class="brand-card">
+          <div class="text-amber-400 font-serif font-bold text-sm text-center">
+            SENCO <span class="text-[9px] block text-neutral-400 tracking-wider">GOLD & DIAMONDS</span>
+          </div>
+        </div>
+
+        <div class="brand-card">
+          <div class="text-white font-extrabold text-base tracking-widest uppercase">
+            Classmate <span class="text-[8px] block text-neutral-500">ITC Limited</span>
+          </div>
+        </div>
+
+        <div class="brand-card">
+          <div class="text-red-400 font-black text-base tracking-wider uppercase">
+            LUX Cozi
+          </div>
+        </div>
+
+        <div class="brand-card">
+          <div class="text-orange-400 font-extrabold text-sm text-center">
+            91.9 Friends FM <span class="text-[9px] block text-neutral-400">Frequency Friends Ki</span>
+          </div>
+        </div>
+
+        <div class="brand-card">
+          <div class="text-red-500 font-black text-sm text-center">
+            RED FM 93.5 <span class="text-[9px] block text-neutral-400">Bajaate Raho!</span>
+          </div>
+        </div>
+
+        <div class="brand-card">
+          <div class="text-cyan-400 font-bold text-base flex items-center gap-1">
+            <i class="fa-solid fa-bolt"></i> Snap-E <span class="text-xs text-neutral-400">Cabs</span>
+          </div>
+        </div>
+
+        <div class="brand-card">
+          <div class="text-amber-500 font-serif font-bold text-base">
+            MIRAJ <span class="text-[9px] block text-neutral-400 font-sans tracking-widest">CINEMAS</span>
+          </div>
+        </div>
+
+        <div class="brand-card">
+          <div class="text-red-400 font-bold text-sm text-center">
+            TV9 বাংলা <span class="text-[9px] block text-neutral-400">News Partner</span>
+          </div>
+        </div>
+
+        <div class="brand-card">
+          <div class="text-blue-300 font-semibold text-xs text-center">
+            Edugraph <span class="text-[9px] block text-neutral-500">The Telegraph Online</span>
+          </div>
+        </div>
+
+        <div class="brand-card">
+          <div class="text-indigo-400 font-bold text-xs text-center">
+            FES Fragomen <span class="text-[8px] block text-neutral-500">Educational Services</span>
+          </div>
+        </div>
+
+        <div class="brand-card">
+          <div class="text-emerald-300 font-bold text-sm">
+            Storia Foods
+          </div>
+        </div>
+
+        <div class="brand-card">
+          <div class="text-purple-400 font-semibold text-sm">
+            Hunk Water
+          </div>
+        </div>
+
+        <div class="brand-card">
+          <div class="text-rose-400 font-semibold text-sm">
+            FlyUp Popsy
+          </div>
+        </div>
+
+        <div class="brand-card">
+          <div class="text-neutral-300 font-semibold text-xs text-center">
+            Sampark Ad <span class="text-[8px] block text-neutral-500">& Media PR</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Sponsor Footnote -->
+      <div class="mt-10 p-5 rounded-xl bg-neutral-900/60 border border-neutral-800 text-center max-w-2xl mx-auto text-xs text-neutral-400">
+        <i class="fa-solid fa-circle-check text-emerald-400 mr-1.5"></i>
+        <span>All logos and brand names represent past festival partners and institutional associations.</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sponsorship Tiers & Packages -->
+  <section id="tiers" class="py-20 md:py-28 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-semibold uppercase tracking-[0.25em] text-amber-400">Partnership Opportunities</span>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl md:text-5xl text-white mt-2">
+          Sponsorship Packages
+        </h2>
+        <div class="w-20 h-0.5 bg-amber-500 mx-auto mt-4 mb-5"></div>
+        <p class="text-neutral-400 text-sm sm:text-base leading-relaxed">
+          Elevate your brand footprint among 3,000+ dynamic students, future journalists, media professionals, and collegiate leaders across Eastern India.
+        </p>
+
+        <!-- Category Filter Toggle -->
+        <div class="inline-flex p-1.5 rounded-full bg-neutral-900 border border-neutral-800 mt-6" role="tablist">
+          <button id="btnMonetary" onclick="switchTierTab('monetary')" class="px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all bg-amber-500 text-neutral-950 shadow-md">
+            Monetary Packages
+          </button>
+          <button id="btnInKind" onclick="switchTierTab('inkind')" class="px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all text-neutral-400 hover:text-white">
+            In-Kind Partnerships
+          </button>
+        </div>
+      </div>
+
+      <!-- Monetary Tiers View -->
+      <div id="monetaryView" class="space-y-12">
+        
+        <!-- Top 3 Signature Tiers -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+          
+          <!-- Co-Sponsor Tier -->
+          <div class="tier-card border border-neutral-800 bg-neutral-900/70 order-2 md:order-1">
+            <div class="p-8">
+              <span class="text-[11px] font-bold uppercase tracking-widest text-neutral-400">Silver Presence</span>
+              <h3 class="font-display font-bold text-2xl text-white mt-1 mb-1">Co-Sponsor</h3>
+              <p class="text-neutral-400 text-xs mb-6">Prominent brand integration across primary events & digital</p>
+
+              <div class="flex items-baseline gap-1 mb-6 pb-6 border-b border-neutral-800">
+                <span class="font-display font-extrabold text-4xl text-amber-400">₹1,75,000</span>
+                <span class="text-xs text-neutral-400 font-medium">/ festival</span>
+              </div>
+
+              <ul class="space-y-3 text-xs text-neutral-300 mb-8">
+                <li class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-check text-amber-400"></i>
+                  <span>Instagram Marketing (Poster & Promos)</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-check text-amber-400"></i>
+                  <span>Official Round Partner branding</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-check text-amber-400"></i>
+                  <span>Inscript ads during rounds & speaker session</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-check text-amber-400"></i>
+                  <span>Logo on digital creatives & banners</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-check text-amber-400"></i>
+                  <span>Company banner & standees on campus</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-check text-amber-400"></i>
+                  <span>Ad coverage via media & radio partners</span>
+                </li>
+              </ul>
+
+              <button onclick="selectTierAndContact('Co-Sponsor (₹1,75,000)')" class="w-full py-3 rounded-xl font-bold text-xs uppercase tracking-wider bg-neutral-800 hover:bg-neutral-700 text-white transition-all">
+                Select Co-Sponsorship
+              </button>
+            </div>
+          </div>
+
+          <!-- Title Sponsor Tier (Featured Center) -->
+          <div class="tier-card border-2 border-amber-500 bg-gradient-to-b from-[#18140c] via-neutral-900 to-neutral-900 shadow-2xl shadow-amber-900/30 order-1 md:order-2 md:-translate-y-4 relative">
+            <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-amber-500 to-yellow-600 text-neutral-950 font-bold text-[10px] tracking-widest uppercase shadow-md">
+              Most Prestigious Tier
+            </div>
+            
+            <div class="p-8 sm:p-9">
+              <span class="text-[11px] font-bold uppercase tracking-widest text-amber-400">Flagship Partnership</span>
+              <h3 class="font-display font-black text-3xl text-white mt-1 mb-1">Title Sponsor</h3>
+              <p class="text-amber-200/80 text-xs mb-6">Supreme headline naming rights & comprehensive 360° coverage</p>
+
+              <div class="flex items-baseline gap-1 mb-6 pb-6 border-b border-amber-600/30">
+                <span class="font-display font-black text-5xl text-amber-300">₹3,00,000</span>
+                <span class="text-xs text-neutral-400 font-medium">/ festival</span>
+              </div>
+
+              <div class="mb-4 text-xs font-semibold text-amber-400 flex items-center gap-1.5">
+                <i class="fa-solid fa-crown"></i> Complete 18/18 Deliverables Covered
+              </div>
+
+              <ul class="space-y-3 text-xs text-neutral-200 mb-8">
+                <li class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-circle-check text-amber-400"></i>
+                  <span><strong>Event Title Billing:</strong> "Brand X presents Xavcomm'27"</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-circle-check text-amber-400"></i>
+                  <span>Pamphlet & WhatsApp Marketing distribution</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-circle-check text-amber-400"></i>
+                  <span>Exclusive Instagram Reel & Video marketing</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-circle-check text-amber-400"></i>
+                  <span>Official Round Partner & Speaker Session Partner</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-circle-check text-amber-400"></i>
+                  <span>Exclusive branding on judges' & participants' tables</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-circle-check text-amber-400"></i>
+                  <span>Dominant logo on all stage flexes, banners & standees</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-circle-check text-amber-400"></i>
+                  <span>All media, radio, and on-stage broadcast commercials</span>
+                </li>
+              </ul>
+
+              <button onclick="selectTierAndContact('Title Sponsor (₹3,00,000)')" class="w-full py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 text-neutral-950 shadow-lg shadow-amber-500/30 hover:shadow-amber-500/50 hover:scale-[1.01] transition-all">
+                Claim Title Sponsorship
+              </button>
+            </div>
+          </div>
+
+          <!-- Powered By Tier -->
+          <div class="tier-card border border-neutral-800 bg-neutral-900/70 order-3">
+            <div class="p-8">
+              <span class="text-[11px] font-bold uppercase tracking-widest text-neutral-400">Bronze Power</span>
+              <h3 class="font-display font-bold text-2xl text-white mt-1 mb-1">Powered By</h3>
+              <p class="text-neutral-400 text-xs mb-6">Substantial co-branding on promotional touchpoints</p>
+
+              <div class="flex items-baseline gap-1 mb-6 pb-6 border-b border-neutral-800">
+                <span class="font-display font-extrabold text-4xl text-amber-400">₹1,00,000</span>
+                <span class="text-xs text-neutral-400 font-medium">/ festival</span>
+              </div>
+
+              <ul class="space-y-3 text-xs text-neutral-300 mb-8">
+                <li class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-check text-amber-400"></i>
+                  <span>Instagram Marketing (Poster)</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-check text-amber-400"></i>
+                  <span>Official Round Partner branding</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-check text-amber-400"></i>
+                  <span>Logo on digital creatives & social collaterals</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-check text-amber-400"></i>
+                  <span>Inscript ads during speaker sessions</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-check text-amber-400"></i>
+                  <span>Logo on official standees and flex banners</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-check text-amber-400"></i>
+                  <span>Ad insertion across media & radio channels</span>
+                </li>
+              </ul>
+
+              <button onclick="selectTierAndContact('Powered By (₹1,00,000)')" class="w-full py-3 rounded-xl font-bold text-xs uppercase tracking-wider bg-neutral-800 hover:bg-neutral-700 text-white transition-all">
+                Select Powered By
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Additional Specialized Partnerships Grid -->
+        <div class="pt-8">
+          <h3 class="font-display font-bold text-xl text-white text-center mb-6">
+            Segment & Engagement Packages
+          </h3>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            
+            <div class="p-6 rounded-xl bg-neutral-900/60 border border-neutral-800 hover:border-amber-500/40 transition-all flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] uppercase font-bold text-amber-400">Competition</span>
+                <h4 class="font-display font-bold text-lg text-white mt-1">Event Partner</h4>
+                <div class="font-display font-bold text-2xl text-amber-300 my-2">₹50,000</div>
+                <p class="text-neutral-400 text-xs">Direct branding, stage banner, and title recognition across specific competitions.</p>
+              </div>
+              <button onclick="selectTierAndContact('Event Partner (₹50,000)')" class="mt-4 text-xs font-semibold text-amber-400 hover:text-amber-300 flex items-center gap-1">
+                Choose Package <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </button>
+            </div>
+
+            <div class="p-6 rounded-xl bg-neutral-900/60 border border-neutral-800 hover:border-amber-500/40 transition-all flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] uppercase font-bold text-amber-400">Associate</span>
+                <h4 class="font-display font-bold text-lg text-white mt-1">Associates</h4>
+                <div class="font-display font-bold text-2xl text-amber-300 my-2">₹40,000</div>
+                <p class="text-neutral-400 text-xs">Associate brand recognition on collaterals, digital announcements, and venue standees.</p>
+              </div>
+              <button onclick="selectTierAndContact('Associates (₹40,000)')" class="mt-4 text-xs font-semibold text-amber-400 hover:text-amber-300 flex items-center gap-1">
+                Choose Package <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </button>
+            </div>
+
+            <div class="p-6 rounded-xl bg-neutral-900/60 border border-neutral-800 hover:border-amber-500/40 transition-all flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] uppercase font-bold text-amber-400">Knowledge</span>
+                <h4 class="font-display font-bold text-lg text-white mt-1">Seminar Partner</h4>
+                <div class="font-display font-bold text-2xl text-amber-300 my-2">₹35,000</div>
+                <p class="text-neutral-400 text-xs">Exclusive seminar room title, speaker podium presence, and session co-hosting rights.</p>
+              </div>
+              <button onclick="selectTierAndContact('Seminar Partner (₹35,000)')" class="mt-4 text-xs font-semibold text-amber-400 hover:text-amber-300 flex items-center gap-1">
+                Choose Package <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </button>
+            </div>
+
+            <div class="p-6 rounded-xl bg-neutral-900/60 border border-neutral-800 hover:border-amber-500/40 transition-all flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] uppercase font-bold text-amber-400">Virtual Reach</span>
+                <h4 class="font-display font-bold text-lg text-white mt-1">Webinar Partner</h4>
+                <div class="font-display font-bold text-2xl text-amber-300 my-2">₹25,000</div>
+                <p class="text-neutral-400 text-xs">Digital webinar session branding, streaming backdrop presence, and registrant database access.</p>
+              </div>
+              <button onclick="selectTierAndContact('Webinar Partner (₹25,000)')" class="mt-4 text-xs font-semibold text-amber-400 hover:text-amber-300 flex items-center gap-1">
+                Choose Package <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </button>
+            </div>
+
+            <div class="p-6 rounded-xl bg-neutral-900/60 border border-neutral-800 hover:border-amber-500/40 transition-all flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] uppercase font-bold text-amber-400">Collateral</span>
+                <h4 class="font-display font-bold text-lg text-white mt-1">Printing Partner</h4>
+                <div class="font-display font-bold text-2xl text-amber-300 my-2">₹50,000</div>
+                <p class="text-neutral-400 text-xs">Official logo on all printed ID badges, souvenir booklets, event certificates, and brochures.</p>
+              </div>
+              <button onclick="selectTierAndContact('Printing Partner (₹50,000)')" class="mt-4 text-xs font-semibold text-amber-400 hover:text-amber-300 flex items-center gap-1">
+                Choose Package <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </button>
+            </div>
+
+            <div class="p-6 rounded-xl bg-neutral-900/60 border border-neutral-800 hover:border-amber-500/40 transition-all flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] uppercase font-bold text-amber-400">On-Ground</span>
+                <h4 class="font-display font-bold text-lg text-white mt-1">Festival Stalls</h4>
+                <div class="font-display font-bold text-2xl text-amber-300 my-2">₹20,000</div>
+                <p class="text-neutral-400 text-xs">Prime campus footfall stall space for product sampling, merchandising, or customer lead generation.</p>
+              </div>
+              <button onclick="selectTierAndContact('Stalls (₹20,000)')" class="mt-4 text-xs font-semibold text-amber-400 hover:text-amber-300 flex items-center gap-1">
+                Choose Package <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </button>
+            </div>
+
+            <div class="p-6 rounded-xl bg-neutral-900/60 border border-neutral-800 hover:border-amber-500/40 transition-all flex flex-col justify-between sm:col-span-2">
+              <div>
+                <span class="text-[10px] uppercase font-bold text-amber-400">Visual Display</span>
+                <h4 class="font-display font-bold text-lg text-white mt-1">Standees & Banners</h4>
+                <div class="font-display font-bold text-2xl text-amber-300 my-2">₹5,000 <span class="text-xs font-sans text-neutral-400 font-normal">/ per standee</span></div>
+                <p class="text-neutral-400 text-xs">Strategic campus placement at main entrance corridors, auditorium lobby, and high-density zones.</p>
+              </div>
+              <button onclick="selectTierAndContact('Standees / Banner (₹5,000 per standee)')" class="mt-4 text-xs font-semibold text-amber-400 hover:text-amber-300 flex items-center gap-1">
+                Choose Package <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- In-Kind Partnerships View -->
+      <div id="inKindView" class="hidden">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <div class="inkind-card">
+            <div class="inkind-icon"><i class="fa-solid fa-radio"></i></div>
+            <h4 class="font-display font-bold text-lg text-white">Radio Partner</h4>
+            <p class="text-neutral-400 text-xs leading-relaxed mt-2">
+              Provides promotional broadcast airtime, RJ mentions, on-air contest promos, and live event announcements.
+            </p>
+            <button onclick="selectTierAndContact('In-Kind: Radio Partner')" class="mt-4 text-xs font-bold text-amber-400 hover:text-amber-300">Inquire Partnership →</button>
+          </div>
+
+          <div class="inkind-card">
+            <div class="inkind-icon"><i class="fa-solid fa-utensils"></i></div>
+            <h4 class="font-display font-bold text-lg text-white">Refreshment Partner</h4>
+            <p class="text-neutral-400 text-xs leading-relaxed mt-2">
+              Supplies curated food, beverages, and snack boxes for attendees, student participants, VIP guests, and festival crew.
+            </p>
+            <button onclick="selectTierAndContact('In-Kind: Refreshment Partner')" class="mt-4 text-xs font-bold text-amber-400 hover:text-amber-300">Inquire Partnership →</button>
+          </div>
+
+          <div class="inkind-card">
+            <div class="inkind-icon"><i class="fa-solid fa-hotel"></i></div>
+            <h4 class="font-display font-bold text-lg text-white">Hospitality Partner</h4>
+            <p class="text-neutral-400 text-xs leading-relaxed mt-2">
+              Arranges premium accommodations, hospitality amenities, and transport coordination for visiting outstation guests and judges.
+            </p>
+            <button onclick="selectTierAndContact('In-Kind: Hospitality Partner')" class="mt-4 text-xs font-bold text-amber-400 hover:text-amber-300">Inquire Partnership →</button>
+          </div>
+
+          <div class="inkind-card">
+            <div class="inkind-icon"><i class="fa-solid fa-bottle-water"></i></div>
+            <h4 class="font-display font-bold text-lg text-white">Hydration Partner</h4>
+            <p class="text-neutral-400 text-xs leading-relaxed mt-2">
+              Offers packaged drinking water stations and sustainable hydration points throughout the university fest zones.
+            </p>
+            <button onclick="selectTierAndContact('In-Kind: Hydration Partner')" class="mt-4 text-xs font-bold text-amber-400 hover:text-amber-300">Inquire Partnership →</button>
+          </div>
+
+          <div class="inkind-card">
+            <div class="inkind-icon"><i class="fa-solid fa-gift"></i></div>
+            <h4 class="font-display font-bold text-lg text-white">Gifting Partner</h4>
+            <p class="text-neutral-400 text-xs leading-relaxed mt-2">
+              Provides branded giveaways, gift hampers, mementos, or experiential goodies for competition winners, dignitaries, and keynote speakers.
+            </p>
+            <button onclick="selectTierAndContact('In-Kind: Gifting Partner')" class="mt-4 text-xs font-bold text-amber-400 hover:text-amber-300">Inquire Partnership →</button>
+          </div>
+
+          <div class="inkind-card">
+            <div class="inkind-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <h4 class="font-display font-bold text-lg text-white">Internship Partner</h4>
+            <p class="text-neutral-400 text-xs leading-relaxed mt-2">
+              Offers coveted internship or live project opportunities in media, PR, advertising, or film to top-ranking competition winners.
+            </p>
+            <button onclick="selectTierAndContact('In-Kind: Internship Partner')" class="mt-4 text-xs font-bold text-amber-400 hover:text-amber-300">Inquire Partnership →</button>
+          </div>
+
+          <div class="inkind-card">
+            <div class="inkind-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+            <h4 class="font-display font-bold text-lg text-white">Stationery Partner</h4>
+            <p class="text-neutral-400 text-xs leading-relaxed mt-2">
+              Supplies essential official event materials including pens, reporter notepads, clipboards, conference folders, and printing services.
+            </p>
+            <button onclick="selectTierAndContact('In-Kind: Stationery Partner')" class="mt-4 text-xs font-bold text-amber-400 hover:text-amber-300">Inquire Partnership →</button>
+          </div>
+
+          <div class="inkind-card">
+            <div class="inkind-icon"><i class="fa-solid fa-newspaper"></i></div>
+            <h4 class="font-display font-bold text-lg text-white">Media Partner</h4>
+            <p class="text-neutral-400 text-xs leading-relaxed mt-2">
+              Provides dedicated pre-event press releases, full feature articles, video interviews, and post-fest retrospective editorial coverage.
+            </p>
+            <button onclick="selectTierAndContact('In-Kind: Media Partner')" class="mt-4 text-xs font-bold text-amber-400 hover:text-amber-300">Inquire Partnership →</button>
+          </div>
+
+          <div class="inkind-card">
+            <div class="inkind-icon"><i class="fa-solid fa-hashtag"></i></div>
+            <h4 class="font-display font-bold text-lg text-white">Digital Partner</h4>
+            <p class="text-neutral-400 text-xs leading-relaxed mt-2">
+              Oversees digital buzz marketing, influencer cross-promotions, social media takeovers, and online outreach drives.
+            </p>
+            <button onclick="selectTierAndContact('In-Kind: Digital Partner')" class="mt-4 text-xs font-bold text-amber-400 hover:text-amber-300">Inquire Partnership →</button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Complete Deliverables Matrix -->
+  <section id="deliverables" class="py-20 md:py-28 bg-[#090b10]/75 backdrop-blur-md border-y border-neutral-800/80 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-semibold uppercase tracking-[0.25em] text-amber-400">Complete Transparency</span>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl md:text-5xl text-white mt-2">
+          Deliverables Matrix
+        </h2>
+        <div class="w-20 h-0.5 bg-amber-500 mx-auto mt-4 mb-5"></div>
+        <p class="text-neutral-400 text-sm sm:text-base leading-relaxed">
+          Directly aligned with the official Xavcomm'27 brochure: inspect exact branding deliverables across the Title, Co-Sponsor, and Powered By tiers.
+        </p>
+
+        <!-- Search / Filter input -->
+        <div class="mt-6 max-w-md mx-auto relative">
+          <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-neutral-500 text-xs"></i>
+          <input type="text" id="deliverableSearch" placeholder="Filter deliverable (e.g. Instagram, banner, speaker)..." class="w-full pl-10 pr-4 py-2.5 rounded-full bg-neutral-900 border border-neutral-800 text-xs text-white placeholder-neutral-500 focus:outline-none focus:border-amber-500">
+        </div>
+      </div>
+
+      <!-- Deliverables Table Container -->
+      <div class="overflow-x-auto rounded-2xl border border-neutral-800 bg-neutral-900/60 shadow-xl">
+        <table class="w-full text-left text-sm border-collapse">
+          <thead>
+            <tr class="bg-[#10131a] border-b border-neutral-800 text-xs uppercase tracking-wider">
+              <th scope="col" class="py-4 px-6 text-neutral-300 font-bold w-1/2">
+                Deliverable / Marketing Channel
+              </th>
+              <th scope="col" class="py-4 px-4 text-center text-amber-300 font-display font-bold w-1/6 bg-amber-950/20 border-x border-amber-900/20">
+                Title Sponsor
+                <span class="block text-[10px] text-amber-400/80 font-sans font-normal mt-0.5">₹3,00,000</span>
+              </th>
+              <th scope="col" class="py-4 px-4 text-center text-neutral-200 font-display font-bold w-1/6">
+                Co-Sponsor
+                <span class="block text-[10px] text-neutral-400 font-sans font-normal mt-0.5">₹1,75,000</span>
+              </th>
+              <th scope="col" class="py-4 px-4 text-center text-neutral-200 font-display font-bold w-1/6">
+                Powered By
+                <span class="block text-[10px] text-neutral-400 font-sans font-normal mt-0.5">₹1,00,000</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody id="deliverablesTableBody" class="divide-y divide-neutral-800/80 text-xs sm:text-sm">
+            
+            <tr class="hover:bg-neutral-800/40 transition-colors">
+              <td class="py-3.5 px-6 text-neutral-200 font-medium">1) Instagram Marketing (poster)</td>
+              <td class="py-3.5 px-4 text-center bg-amber-950/10 border-x border-amber-900/20"><span class="badge-covered">Covered</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-covered">Covered</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-covered">Covered</span></td>
+            </tr>
+
+            <tr class="hover:bg-neutral-800/40 transition-colors">
+              <td class="py-3.5 px-6 text-neutral-200 font-medium">2) Pamphlet Distribution</td>
+              <td class="py-3.5 px-4 text-center bg-amber-950/10 border-x border-amber-900/20"><span class="badge-covered">Covered</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-not-covered">—</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-not-covered">—</span></td>
+            </tr>
+
+            <tr class="hover:bg-neutral-800/40 transition-colors">
+              <td class="py-3.5 px-6 text-neutral-200 font-medium">3) WhatsApp Marketing</td>
+              <td class="py-3.5 px-4 text-center bg-amber-950/10 border-x border-amber-900/20"><span class="badge-covered">Covered</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-not-covered">—</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-not-covered">—</span></td>
+            </tr>
+
+            <tr class="hover:bg-neutral-800/40 transition-colors">
+              <td class="py-3.5 px-6 text-neutral-200 font-medium">4) Instagram Marketing (video/reel)</td>
+              <td class="py-3.5 px-4 text-center bg-amber-950/10 border-x border-amber-900/20"><span class="badge-covered">Covered</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-not-covered">—</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-not-covered">—</span></td>
+            </tr>
+
+            <tr class="hover:bg-neutral-800/40 transition-colors">
+              <td class="py-3.5 px-6 text-neutral-200 font-medium">5) Round Partner</td>
+              <td class="py-3.5 px-4 text-center bg-amber-950/10 border-x border-amber-900/20"><span class="badge-covered">Covered</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-covered">Covered</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-covered">Covered</span></td>
+            </tr>
+
+            <tr class="hover:bg-neutral-800/40 transition-colors">
+              <td class="py-3.5 px-6 text-neutral-200 font-medium">6) Inscript advertisement during rounds/events</td>
+              <td class="py-3.5 px-4 text-center bg-amber-950/10 border-x border-amber-900/20"><span class="badge-covered">Covered</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-covered">Covered</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-not-covered">—</span></td>
+            </tr>
+
+            <tr class="hover:bg-neutral-800/40 transition-colors">
+              <td class="py-3.5 px-6 text-neutral-200 font-medium">7) Logo on digital creatives</td>
+              <td class="py-3.5 px-4 text-center bg-amber-950/10 border-x border-amber-900/20"><span class="badge-covered">Covered</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-covered">Covered</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-covered">Covered</span></td>
+            </tr>
+
+            <tr class="hover:bg-neutral-800/40 transition-colors">
+              <td class="py-3.5 px-6 text-neutral-200 font-medium">8) Speaker session registration partner</td>
+              <td class="py-3.5 px-4 text-center bg-amber-950/10 border-x border-amber-900/20"><span class="badge-covered">Covered</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-covered">Covered</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-not-covered">—</span></td>
+            </tr>
+
+            <tr class="hover:bg-neutral-800/40 transition-colors">
+              <td class="py-3.5 px-6 text-neutral-200 font-medium">9) Logo on judges' and participant's table</td>
+              <td class="py-3.5 px-4 text-center bg-amber-950/10 border-x border-amber-900/20"><span class="badge-covered">Covered</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-not-covered">—</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-not-covered">—</span></td>
+            </tr>
+
+            <tr class="hover:bg-neutral-800/40 transition-colors">
+              <td class="py-3.5 px-6 text-neutral-200 font-medium">10) Inscript advertisement in speakers's session</td>
+              <td class="py-3.5 px-4 text-center bg-amber-950/10 border-x border-amber-900/20"><span class="badge-covered">Covered</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-covered">Covered</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-covered">Covered</span></td>
+            </tr>
+
+            <tr class="hover:bg-neutral-800/40 transition-colors">
+              <td class="py-3.5 px-6 text-neutral-200 font-medium">11) Logo during speaker session</td>
+              <td class="py-3.5 px-4 text-center bg-amber-950/10 border-x border-amber-900/20"><span class="badge-covered">Covered</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-not-covered">—</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-not-covered">—</span></td>
+            </tr>
+
+            <tr class="hover:bg-neutral-800/40 transition-colors">
+              <td class="py-3.5 px-6 text-neutral-200 font-medium">12) Logo during events</td>
+              <td class="py-3.5 px-4 text-center bg-amber-950/10 border-x border-amber-900/20"><span class="badge-covered">Covered</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-covered">Covered</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-covered">Covered</span></td>
+            </tr>
+
+            <tr class="hover:bg-neutral-800/40 transition-colors">
+              <td class="py-3.5 px-6 text-neutral-200 font-medium">13) Logo on standee</td>
+              <td class="py-3.5 px-4 text-center bg-amber-950/10 border-x border-amber-900/20"><span class="badge-covered">Covered</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-covered">Covered</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-covered">Covered</span></td>
+            </tr>
+
+            <tr class="hover:bg-neutral-800/40 transition-colors">
+              <td class="py-3.5 px-6 text-neutral-200 font-medium">14) Logo on flexes and banner</td>
+              <td class="py-3.5 px-4 text-center bg-amber-950/10 border-x border-amber-900/20"><span class="badge-covered">Covered</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-covered">Covered</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-covered">Covered</span></td>
+            </tr>
+
+            <tr class="hover:bg-neutral-800/40 transition-colors">
+              <td class="py-3.5 px-6 text-neutral-200 font-medium">15) Company banner & standees</td>
+              <td class="py-3.5 px-4 text-center bg-amber-950/10 border-x border-amber-900/20"><span class="badge-covered">Covered</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-covered">Covered</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-not-covered">—</span></td>
+            </tr>
+
+            <tr class="hover:bg-neutral-800/40 transition-colors">
+              <td class="py-3.5 px-6 text-neutral-200 font-medium">16) Event partner recognition</td>
+              <td class="py-3.5 px-4 text-center bg-amber-950/10 border-x border-amber-900/20"><span class="badge-covered">Covered</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-covered">Covered</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-covered">Covered</span></td>
+            </tr>
+
+            <tr class="hover:bg-neutral-800/40 transition-colors">
+              <td class="py-3.5 px-6 text-neutral-200 font-medium">17) Ad through media / digital media / radio partner</td>
+              <td class="py-3.5 px-4 text-center bg-amber-950/10 border-x border-amber-900/20"><span class="badge-covered">Covered</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-covered">Covered</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-covered">Covered</span></td>
+            </tr>
+
+            <tr class="hover:bg-neutral-800/40 transition-colors">
+              <td class="py-3.5 px-6 text-neutral-200 font-medium">18) Ad during events</td>
+              <td class="py-3.5 px-4 text-center bg-amber-950/10 border-x border-amber-900/20"><span class="badge-covered">Covered</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-covered">Covered</span></td>
+              <td class="py-3.5 px-4 text-center"><span class="badge-covered">Covered</span></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mt-4 flex items-center justify-between text-xs text-neutral-400">
+        <div><span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-400 mr-1.5"></span> C = Covered in Package</div>
+        <div>All 18 criteria verified against the Official Brochure</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Letter to Sponsors (Convenor's Message) -->
+  <section id="convenors" class="py-20 md:py-28 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-gradient-to-br from-[#12141c] via-[#0e1017] to-[#12141c] rounded-3xl border border-amber-600/30 p-8 sm:p-12 md:p-16 relative overflow-hidden shadow-2xl">
+        <!-- Stamp / Watermark Accent -->
+        <div class="absolute -right-8 -bottom-8 opacity-5 text-9xl text-amber-400 pointer-events-none">
+          <i class="fa-solid fa-stamp"></i>
+        </div>
+
+        <div class="text-center mb-8">
+          <span class="text-xs font-semibold uppercase tracking-[0.3em] text-amber-400 block mb-2">Official Invitation</span>
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-white">Letter to the Sponsors</h2>
+          <div class="w-16 h-0.5 bg-amber-500 mx-auto mt-3"></div>
+        </div>
+
+        <div class="space-y-5 text-neutral-300 text-sm sm:text-base leading-relaxed font-sans">
+          <p>
+            We are delighted to announce that <strong>St. Xavier’s University, Kolkata</strong>, is preparing to host the 5th edition of <strong>“Xavcomm”</strong>, the annual inter-college fest organized by the Department of Mass Communication under the Faculty of Arts and Social Studies.
+          </p>
+          <p>
+            Xavcomm has evolved over the years into a thriving platform that honours innovation, creativity, and teamwork in the field of media and communication. With participants from <strong>over 30 colleges and universities</strong> in the region, the 2027 edition is expected to be even more exciting. The two-day fest will feature over a dozen events spanning diverse domains including journalism, public relations, advertising, creative arts, and digital content creation.
+          </p>
+          <p>
+            Our fest aims to showcase the wide range of skills and imaginative potential of aspiring media professionals by providing a platform where expression can meet excellence.
+          </p>
+          <p>
+            With an expected footfall of <strong>2000–3000 per day</strong>, Xavcomm 2027 offers a unique opportunity for your esteemed organisation to engage with talented and media-savvy youth — our future influencers and professionals.
+          </p>
+          <p>
+            We would be delighted to have your prestigious organization as a sponsor in order to make this celebration of creativity and communication a successful endeavour. We sincerely look forward to your positive response and partnership to make Xavcomm 2027 an unforgettable experience for all.
+          </p>
+        </div>
+
+        <!-- Signatures Section -->
+        <div class="mt-12 pt-8 border-t border-neutral-800 grid grid-cols-1 sm:grid-cols-2 gap-8">
+          
+          <div class="text-center sm:text-left">
+            <div class="font-serif italic text-2xl text-amber-300 mb-1">Shomili Mukherjee</div>
+            <div class="font-display font-bold text-xs uppercase tracking-wider text-white">Student Convenor</div>
+            <div class="text-xs text-neutral-400">Department of Mass Communication, SXUK</div>
+          </div>
+
+          <div class="text-center sm:text-right">
+            <div class="font-serif italic text-2xl text-amber-300 mb-1">Dr. Somak Sen</div>
+            <div class="font-display font-bold text-xs uppercase tracking-wider text-white">Professor Convenor</div>
+            <div class="text-xs text-neutral-400">Department of Mass Communication, SXUK</div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact & Sponsorship Inquiry Section -->
+  <section id="contact" class="py-20 md:py-28 bg-[#090a0f]/80 backdrop-blur-md border-t border-neutral-800/80 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-semibold uppercase tracking-[0.25em] text-amber-400">Initiate Dialogue</span>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl md:text-5xl text-white mt-2">
+          Get In Touch With Us
+        </h2>
+        <div class="w-20 h-0.5 bg-amber-500 mx-auto mt-4 mb-5"></div>
+        <p class="text-neutral-400 text-sm sm:text-base leading-relaxed">
+          Connect directly with the student convenor and organizing core committee to tailor your custom sponsorship package.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+        
+        <!-- Contact Directory & Info (Left Col) -->
+        <div class="lg:col-span-5 space-y-6">
+          
+          <!-- Channels Card -->
+          <div class="bg-neutral-900/70 border border-neutral-800 rounded-2xl p-6">
+            <h3 class="font-display font-bold text-white text-base mb-4 flex items-center gap-2">
+              <i class="fa-solid fa-address-book text-amber-400"></i> Official Channels
+            </h3>
+            
+            <div class="space-y-3.5 text-xs sm:text-sm">
+              <a href="mailto:Xavcommm2027@gmail.com" class="flex items-center gap-3 p-3 rounded-xl bg-[#0e1017] border border-neutral-800/80 hover:border-amber-500/50 text-neutral-300 hover:text-white transition-all">
+                <div class="w-9 h-9 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center shrink-0">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <span class="text-[10px] uppercase font-semibold text-neutral-500 block">Email Us</span>
+                  <span class="font-medium">Xavcommm2027@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="https://instagram.com/masscomm_sxu" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-xl bg-[#0e1017] border border-neutral-800/80 hover:border-amber-500/50 text-neutral-300 hover:text-white transition-all">
+                <div class="w-9 h-9 rounded-lg bg-pink-500/10 text-pink-400 flex items-center justify-center shrink-0">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div>
+                  <span class="text-[10px] uppercase font-semibold text-neutral-500 block">Instagram</span>
+                  <span class="font-medium">@masscomm_sxu</span>
+                </div>
+              </a>
+
+              <div class="flex items-center gap-3 p-3 rounded-xl bg-[#0e1017] border border-neutral-800/80 text-neutral-300">
+                <div class="w-9 h-9 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center shrink-0">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <span class="text-[10px] uppercase font-semibold text-neutral-500 block">Venue Location</span>
+                  <span class="text-xs">St. Xavier's University, Action Area IIIB, New Town, Kolkata - 700160</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Core Committee Contacts Card -->
+          <div class="bg-neutral-900/70 border border-neutral-800 rounded-2xl p-6">
+            <h3 class="font-display font-bold text-white text-base mb-4 flex items-center gap-2">
+              <i class="fa-solid fa-phone text-amber-400"></i> Convenor & Core Committee
+            </h3>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+              
+              <!-- Shomili Mukherjee -->
+              <div class="p-3 rounded-xl bg-[#0e1017] border border-neutral-800/80 sm:col-span-2">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <span class="text-[10px] uppercase tracking-wider text-amber-400 font-bold block">Student Convenor</span>
+                    <strong class="text-white text-sm">Shomili Mukherjee</strong>
+                  </div>
+                  <a href="tel:7439409936" class="px-3 py-1.5 rounded-lg bg-amber-500/10 text-amber-400 hover:bg-amber-500 hover:text-black font-semibold text-xs transition-all flex items-center gap-1.5">
+                    <i class="fa-solid fa-phone"></i> 7439409936
+                  </a>
+                </div>
+              </div>
+
+              <!-- Anweshan Ghosh -->
+              <div class="p-3 rounded-xl bg-[#0e1017] border border-neutral-800/80">
+                <strong class="text-white block">Anweshan Ghosh</strong>
+                <a href="tel:9330927071" class="text-amber-400/90 hover:text-amber-300 transition-colors flex items-center gap-1 mt-1 font-mono text-[11px]">
+                  <i class="fa-solid fa-phone text-[10px]"></i> 9330927071
+                </a>
+              </div>
+
+              <!-- Sharanya Roy -->
+              <div class="p-3 rounded-xl bg-[#0e1017] border border-neutral-800/80">
+                <strong class="text-white block">Sharanya Roy</strong>
+                <a href="tel:9874342310" class="text-amber-400/90 hover:text-amber-300 transition-colors flex items-center gap-1 mt-1 font-mono text-[11px]">
+                  <i class="fa-solid fa-phone text-[10px]"></i> 9874342310
+                </a>
+              </div>
+
+              <!-- Rooprekha Ghosh -->
+              <div class="p-3 rounded-xl bg-[#0e1017] border border-neutral-800/80">
+                <strong class="text-white block">Rooprekha Ghosh</strong>
+                <a href="tel:9073798757" class="text-amber-400/90 hover:text-amber-300 transition-colors flex items-center gap-1 mt-1 font-mono text-[11px]">
+                  <i class="fa-solid fa-phone text-[10px]"></i> 9073798757
+                </a>
+              </div>
+
+              <!-- Sagarnil Ganguly -->
+              <div class="p-3 rounded-xl bg-[#0e1017] border border-neutral-800/80">
+                <strong class="text-white block">Sagarnil Ganguly</strong>
+                <a href="tel:8100218524" class="text-amber-400/90 hover:text-amber-300 transition-colors flex items-center gap-1 mt-1 font-mono text-[11px]">
+                  <i class="fa-solid fa-phone text-[10px]"></i> 8100218524
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Interactive Sponsorship Inquiry Form (Right Col) -->
+        <div class="lg:col-span-7">
+          <div class="bg-neutral-900/70 border border-neutral-800 rounded-2xl p-8 sm:p-10 relative">
+            <h3 class="font-display font-bold text-2xl text-white mb-2">Send Sponsorship Inquiry</h3>
+            <p class="text-neutral-400 text-xs sm:text-sm mb-6">
+              Fill out your company details below. Our sponsorship committee will reply within 24 hours with a tailored proposal.
+            </p>
+
+            <form id="sponsorInquiryForm" class="space-y-4" onsubmit="handleInquirySubmit(event)">
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="contactName" class="block text-xs font-semibold uppercase tracking-wider text-neutral-300 mb-1.5">
+                    Your Name <span class="text-red-400">*</span>
+                  </label>
+                  <input type="text" id="contactName" required placeholder="e.g. Rahul Sharma" class="form-input">
+                </div>
+
+                <div>
+                  <label for="companyName" class="block text-xs font-semibold uppercase tracking-wider text-neutral-300 mb-1.5">
+                    Organization / Brand <span class="text-red-400">*</span>
+                  </label>
+                  <input type="text" id="companyName" required placeholder="e.g. Acme Media Corp" class="form-input">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="contactEmail" class="block text-xs font-semibold uppercase tracking-wider text-neutral-300 mb-1.5">
+                    Official Email <span class="text-red-400">*</span>
+                  </label>
+                  <input type="email" id="contactEmail" required placeholder="name@company.com" class="form-input">
+                </div>
+
+                <div>
+                  <label for="contactPhone" class="block text-xs font-semibold uppercase tracking-wider text-neutral-300 mb-1.5">
+                    Phone / WhatsApp Number <span class="text-red-400">*</span>
+                  </label>
+                  <input type="tel" id="contactPhone" required placeholder="+91 98765 43210" class="form-input">
+                </div>
+              </div>
+
+              <div>
+                <label for="sponsorTier" class="block text-xs font-semibold uppercase tracking-wider text-neutral-300 mb-1.5">
+                  Package of Interest <span class="text-red-400">*</span>
+                </label>
+                <select id="sponsorTier" required class="form-input">
+                  <option value="" disabled selected>Select a package or partnership type...</option>
+                  <optgroup label="Monetary Packages">
+                    <option value="Title Sponsor (₹3,00,000)">Title Sponsor — ₹3,00,000</option>
+                    <option value="Co-Sponsor (₹1,75,000)">Co-Sponsor — ₹1,75,000</option>
+                    <option value="Powered By (₹1,00,000)">Powered By — ₹1,00,000</option>
+                    <option value="Event Partner (₹50,000)">Event Partner — ₹50,000</option>
+                    <option value="Printing Partner (₹50,000)">Printing Partner — ₹50,000</option>
+                    <option value="Associates (₹40,000)">Associates — ₹40,000</option>
+                    <option value="Seminar Partner (₹35,000)">Seminar Partner — ₹35,000</option>
+                    <option value="Webinar Partner (₹25,000)">Webinar Partner — ₹25,000</option>
+                    <option value="Stalls (₹20,000)">Festival Stalls — ₹20,000</option>
+                    <option value="Standees / Banner (₹5,000 per standee)">Standees / Banner — ₹5,000 each</option>
+                  </optgroup>
+                  <optgroup label="In-Kind Partnerships">
+                    <option value="In-Kind: Radio Partner">Radio Partner</option>
+                    <option value="In-Kind: Refreshment Partner">Refreshment Partner</option>
+                    <option value="In-Kind: Hospitality Partner">Hospitality Partner</option>
+                    <option value="In-Kind: Hydration Partner">Hydration Partner</option>
+                    <option value="In-Kind: Gifting Partner">Gifting Partner</option>
+                    <option value="In-Kind: Internship Partner">Internship Partner</option>
+                    <option value="In-Kind: Stationery Partner">Stationery Partner</option>
+                    <option value="In-Kind: Media Partner">Media Partner</option>
+                    <option value="In-Kind: Digital Partner">Digital Partner</option>
+                  </optgroup>
+                  <option value="Custom Partnership / Discussion">Custom Partnership / Other</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="contactMessage" class="block text-xs font-semibold uppercase tracking-wider text-neutral-300 mb-1.5">
+                  Message / Brand Objectives
+                </label>
+                <textarea id="contactMessage" rows="4" placeholder="Briefly share your branding goals, expected deliverables, or questions for our team..." class="form-input"></textarea>
+              </div>
+
+              <div class="pt-2 flex flex-col sm:flex-row gap-3">
+                <button type="submit" id="submitInquiryBtn" class="flex-1 py-4 rounded-xl font-bold text-xs uppercase tracking-wider bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 text-neutral-950 shadow-lg shadow-amber-500/20 hover:shadow-amber-500/40 hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2">
+                  <i class="fa-solid fa-paper-plane"></i>
+                  <span>Submit Inquiry</span>
+                </button>
+
+                <button type="button" onclick="sendViaWhatsApp()" class="py-4 px-6 rounded-xl font-bold text-xs uppercase tracking-wider bg-[#25D366]/20 border border-[#25D366]/50 text-[#25D366] hover:bg-[#25D366] hover:text-black shadow-lg shadow-[#25D366]/10 hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2">
+                  <i class="fa-brands fa-whatsapp text-base"></i>
+                  <span>Send via WhatsApp</span>
+                </button>
+              </div>
+
+              <!-- Status Notification -->
+              <div id="formSuccessAlert" class="hidden p-4 rounded-xl bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 text-xs sm:text-sm flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-lg text-emerald-400 shrink-0"></i>
+                <div>
+                  <strong class="block font-bold">Inquiry Received!</strong>
+                  <span>Thank you for reaching out. The Xavcomm'27 convenor team will contact you shortly.</span>
+                </div>
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#050608] border-t border-neutral-900 text-neutral-400 text-xs py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10 pb-10 border-b border-neutral-900">
+        
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-8 h-8 rounded-full bg-amber-500 flex items-center justify-center text-neutral-950 font-display font-black text-sm">
+              X
+            </div>
+            <span class="font-display font-bold text-lg text-white">XAVCOMM<span class="text-amber-400">'27</span></span>
+          </div>
+          <p class="text-neutral-400 text-xs leading-relaxed max-w-md">
+            Department of Mass Communication, St. Xavier's University, Kolkata.<br>
+            Action Area IIIB, New Town, Kolkata - 700160, West Bengal, India.
+          </p>
+          <p class="text-neutral-500 text-[11px] mt-2">
+            Organised in association with St. Xavier's University Kolkata Alumni Association.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-display font-bold text-xs uppercase tracking-wider text-white mb-3">Quick Navigation</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#about" class="hover:text-amber-300 transition-colors">About SXUK</a></li>
+            <li><a href="#theme" class="hover:text-amber-300 transition-colors">Theme & Pillars</a></li>
+            <li><a href="#highlights" class="hover:text-amber-300 transition-colors">Past Editions</a></li>
+            <li><a href="#tiers" class="hover:text-amber-300 transition-colors">Sponsorship Tiers</a></li>
+            <li><a href="#deliverables" class="hover:text-amber-300 transition-colors">Deliverables Matrix</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-display font-bold text-xs uppercase tracking-wider text-white mb-3">Official Connect</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="mailto:Xavcommm2027@gmail.com" class="hover:text-amber-300 transition-colors">Xavcommm2027@gmail.com</a></li>
+            <li><a href="https://instagram.com/masscomm_sxu" target="_blank" class="hover:text-amber-300 transition-colors">@masscomm_sxu</a></li>
+            <li><span class="text-neutral-500">Dates:</span> 29th & 30th January, 2027</li>
+            <li><span class="text-neutral-500">Student Convenor:</span> 7439409936</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-neutral-500">
+        <div>
+          © 2027 Xavcomm • Department of Mass Communication, St. Xavier's University, Kolkata. All rights reserved.
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="#home" class="hover:text-amber-400 transition-colors flex items-center gap-1">
+            <span>Back to Top</span> <i class="fa-solid fa-arrow-up text-[10px]"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="backToTopBtn" aria-label="Back to Top" class="fixed bottom-6 right-6 p-3 rounded-full bg-amber-500 text-neutral-950 font-bold shadow-xl shadow-amber-500/20 hover:scale-110 active:scale-95 opacity-0 pointer-events-none transition-all duration-300 z-50">
+    <i class="fa-solid fa-arrow-up text-sm"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
