@@ -190,48 +190,72 @@ function initPosterCanvas() {
 
   pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
 
-  const posterPdfUrl = 'assets/docs/Xavcomm27_Official_Poster.pdf';
+  // Support both root-level compressed PDF (deployed on GitHub/Vercel) and local nested assets path
+  const posterPdfUrls = [
+    "Xavcomm' 27 (1)_compressed.pdf",
+    "assets/docs/Xavcomm27_Official_Poster.pdf",
+    "official_poster.png"
+  ];
 
-  pdfjsLib.getDocument(posterPdfUrl).promise
-    .then((pdf) => {
-      return pdf.getPage(1);
-    })
-    .then((page) => {
-      // Scale based on container width or 2x for sharp retina display
-      const containerWidth = canvas.parentElement?.clientWidth || 500;
-      const initialViewport = page.getViewport({ scale: 1 });
-      const scale = (containerWidth / initialViewport.width) * 1.5;
-      const viewport = page.getViewport({ scale });
-
-      const context = canvas.getContext('2d');
-      canvas.height = viewport.height;
-      canvas.width = viewport.width;
-
-      const renderContext = {
-        canvasContext: context,
-        viewport: viewport
-      };
-
-      return page.render(renderContext).promise;
-    })
-    .then(() => {
-      if (loadingEl) loadingEl.classList.add('hidden');
-      canvas.classList.remove('hidden');
-    })
-    .catch((err) => {
-      console.warn('PDF.js rendering note:', err);
+  function tryLoadPoster(urlIndex) {
+    if (urlIndex >= posterPdfUrls.length) {
       if (loadingEl) {
         loadingEl.innerHTML = `
           <div class="py-10 text-center">
             <i class="fa-solid fa-file-pdf text-4xl text-amber-400 mb-3 block"></i>
             <span class="text-neutral-300 block font-semibold mb-2">Official Xavcomm'27 Poster Available</span>
-            <a href="assets/docs/Xavcomm27_Official_Poster.pdf" target="_blank" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-amber-500 text-black font-bold text-xs uppercase tracking-wider">
+            <a href="Xavcomm' 27 (1)_compressed.pdf" target="_blank" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-amber-500 text-black font-bold text-xs uppercase tracking-wider">
               <i class="fa-solid fa-expand"></i> View Poster PDF
             </a>
           </div>
         `;
       }
-    });
+      return;
+    }
+
+    const currentUrl = posterPdfUrls[urlIndex];
+
+    // If it's a PNG image, draw directly to canvas
+    if (currentUrl.endsWith('.png') || currentUrl.endsWith('.jpg')) {
+      const img = new Image();
+      img.onload = () => {
+        canvas.width = img.naturalWidth || 800;
+        canvas.height = img.naturalHeight || 1200;
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0);
+        if (loadingEl) loadingEl.classList.add('hidden');
+        canvas.classList.remove('hidden');
+      };
+      img.onerror = () => tryLoadPoster(urlIndex + 1);
+      img.src = currentUrl;
+      return;
+    }
+
+    pdfjsLib.getDocument(currentUrl).promise
+      .then((pdf) => pdf.getPage(1))
+      .then((page) => {
+        const containerWidth = canvas.parentElement?.clientWidth || 500;
+        const initialViewport = page.getViewport({ scale: 1 });
+        const scale = (containerWidth / initialViewport.width) * 1.5;
+        const viewport = page.getViewport({ scale });
+
+        const context = canvas.getContext('2d');
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        return page.render({ canvasContext: context, viewport: viewport }).promise;
+      })
+      .then(() => {
+        if (loadingEl) loadingEl.classList.add('hidden');
+        canvas.classList.remove('hidden');
+      })
+      .catch((err) => {
+        console.warn(`Could not load poster from ${currentUrl}, trying fallback...`, err);
+        tryLoadPoster(urlIndex + 1);
+      });
+  }
+
+  tryLoadPoster(0);
 }
 
 /**

@@ -47,7 +47,8 @@
   <!-- PDF.js Library via CDN for high-fidelity poster rendering -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
   
-  <!-- Custom Stylesheet -->
+  <!-- Custom Stylesheet (Works in both root and assets/ directory structure) -->
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="bg-[#07080b] text-gray-200 font-sans antialiased selection:bg-amber-500 selection:text-black min-h-screen relative overflow-x-hidden">
@@ -441,7 +442,7 @@
             <i class="fa-solid fa-award"></i>
             <span>Explore Sponsorship Deck</span>
           </a>
-          <a href="assets/docs/SponsorshipBrochureXavcomm27.pdf" download="Xavcomm27_Sponsorship_Brochure.pdf" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-sm tracking-wider uppercase bg-neutral-900/90 text-amber-300 border border-amber-600/40 hover:bg-neutral-800 hover:border-amber-400 hover:text-white hover:-translate-y-0.5 transition-all shadow-lg">
+          <a href="SponsorshipBrochurXavcomm27_compressed.pdf" download="Xavcomm27_Sponsorship_Brochure.pdf" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-sm tracking-wider uppercase bg-neutral-900/90 text-amber-300 border border-amber-600/40 hover:bg-neutral-800 hover:border-amber-400 hover:text-white hover:-translate-y-0.5 transition-all shadow-lg">
             <i class="fa-solid fa-file-arrow-down text-amber-400"></i>
             <span>Download Brochure (PDF)</span>
           </a>
@@ -751,7 +752,7 @@
                 <span class="flex items-center gap-1.5 text-amber-300">
                   <i class="fa-solid fa-certificate"></i> Verified Official Poster
                 </span>
-                <a href="assets/docs/Xavcomm27_Official_Poster.pdf" target="_blank" class="hover:text-amber-400 transition-colors flex items-center gap-1">
+                <a href="Xavcomm' 27 (1)_compressed.pdf" target="_blank" class="hover:text-amber-400 transition-colors flex items-center gap-1">
                   <span>View PDF</span> <i class="fa-solid fa-up-right-from-square text-[10px]"></i>
                 </a>
               </div>
@@ -806,12 +807,12 @@
 
           <!-- Direct Download Buttons -->
           <div class="flex flex-col sm:flex-row gap-3 pt-2">
-            <a href="assets/docs/Xavcomm27_Official_Poster.pdf" download="Xavcomm27_Official_Poster.pdf" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 text-neutral-950 shadow-lg shadow-amber-500/20 hover:shadow-amber-500/40 hover:-translate-y-0.5 transition-all">
+            <a href="Xavcomm' 27 (1)_compressed.pdf" download="Xavcomm27_Official_Poster.pdf" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 text-neutral-950 shadow-lg shadow-amber-500/20 hover:shadow-amber-500/40 hover:-translate-y-0.5 transition-all">
               <i class="fa-solid fa-download"></i>
               <span>Download Official Poster (PDF)</span>
             </a>
 
-            <a href="assets/docs/Xavcomm27_Official_Poster.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-xs uppercase tracking-wider bg-neutral-900 text-amber-300 border border-amber-600/40 hover:bg-neutral-800 hover:text-white transition-all">
+            <a href="Xavcomm' 27 (1)_compressed.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-xs uppercase tracking-wider bg-neutral-900 text-amber-300 border border-amber-600/40 hover:bg-neutral-800 hover:text-white transition-all">
               <i class="fa-solid fa-expand"></i>
               <span>Open In New Tab</span>
             </a>
@@ -1990,8 +1991,9 @@
     <i class="fa-solid fa-arrow-up text-sm"></i>
   </button>
 
-  <!-- Scripts -->
-  <script src="assets/js/main.js"></script>
+  <!-- Scripts (Loads from root or assets/js/ automatically) -->
+  <script src="main.js"></script>
+  <script>if (typeof initCountdown === 'undefined') { document.write('<script src="assets/js/main.js"><\/script>'); }</script>
 </body>
 </html>
 
